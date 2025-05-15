@@ -3,11 +3,12 @@ import Header from "../Header";
 import Sidebar from "../Sidebar";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Link } from "react-router-dom";
+
 const BasicTable = () => {
   return (
     <>
       <Header />
-      <Sidebar id='menu-item16' id1='menu-items16' activeClassName='basic-table'/>
+      <Sidebar id="menu-item16" id1="menu-items16" activeClassName="basic-table" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -21,8 +22,8 @@ const BasicTable = () => {
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
-                        <FeatherIcon icon="chevron-right"/>
-                        </i>
+                        <FeatherIcon icon="chevron-right" />
+                      </i>
                     </li>
                     <li className="breadcrumb-item active">Basic Tables</li>
                   </ul>
@@ -354,9 +355,7 @@ const BasicTable = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -371,9 +370,7 @@ const BasicTable = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -385,15 +382,10 @@ const BasicTable = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -408,9 +400,7 @@ const BasicTable = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -422,15 +412,10 @@ const BasicTable = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -442,15 +427,10 @@ const BasicTable = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -462,15 +442,10 @@ const BasicTable = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -482,15 +457,10 @@ const BasicTable = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -505,9 +475,7 @@ const BasicTable = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -522,9 +490,7 @@ const BasicTable = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -539,9 +505,7 @@ const BasicTable = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -556,9 +520,7 @@ const BasicTable = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -570,14 +532,10 @@ const BasicTable = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>

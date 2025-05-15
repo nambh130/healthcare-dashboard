@@ -27,9 +27,10 @@ import { DatePicker, Space } from "antd";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Select from "react-select";
 import { itemRender, onShowSizeChange } from "../Pagination";
-import { Dropdown} from 'react-bootstrap';
+import { Dropdown } from "react-bootstrap";
+
 const Expenses = () => {
-  const [dropdownValue, setDropdownValue] = useState('');
+  const [dropdownValue, setDropdownValue] = useState("");
   const [selectedOption, setSelectedOption] = useState(null);
   const [employee, setEmployee] = useState([
     { value: 1, label: "Select Employee Name" },
@@ -59,7 +60,7 @@ const Expenses = () => {
   };
   const datasource = [
     {
-      id:1,
+      id: 1,
       Item: "Anaesthetic machine",
       Purchase_From: "Biomedical Equipment Inc",
       Img: blogimg2,
@@ -71,7 +72,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:2,
+      id: 2,
       Item: "Aspiration Pump",
       Purchase_From: "Medi Pro Service",
       Img: blogimg6,
@@ -83,7 +84,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:3,
+      id: 3,
       Item: "Anaesthetic machine",
       Purchase_From: "Biomedical Equipment Inc",
       Img: blogimg12,
@@ -95,7 +96,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:4,
+      id: 4,
       Item: "Anaesthetic machine",
       Purchase_From: "Biomedical Equipment Inc",
       Img: blogimg8,
@@ -107,7 +108,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:5,
+      id: 5,
       Item: "Medical Expenses",
       Purchase_From: "Hi-life Medicals",
       Img: blogimg10,
@@ -119,7 +120,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:6,
+      id: 6,
       Item: "Anaesthetic machine",
       Purchase_From: "Biomedical Equipment Inc",
       Img: blogimg2,
@@ -131,7 +132,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:7,
+      id: 7,
       Item: "Aspiration Pump",
       Purchase_From: "Medi Pro Service",
       Img: blogimg5,
@@ -143,7 +144,7 @@ const Expenses = () => {
       FIELD8: "",
     },
     {
-      id:8,
+      id: 8,
       Item: "Medical Expenses",
       Purchase_From: "Hi-life Medicals",
       Img: blogimg7,
@@ -174,11 +175,7 @@ const Expenses = () => {
         <>
           <h2 className="profile-image">
             <Link to="/profile" className="avatar avatar-sm me-2">
-              <img
-                className="avatar-img rounded-circle"
-                src={record.Img}
-                alt="User Image"
-              />
+              <img className="avatar-img rounded-circle" src={record.Img} alt="User Image" />
             </Link>
             <Link to="/profile">{record.Purchase_by}</Link>
           </h2>
@@ -202,8 +199,8 @@ const Expenses = () => {
     },
 
     {
-      title: 'Status',
-      dataIndex: 'Status',
+      title: "Status",
+      dataIndex: "Status",
       // key: 'status',
       render: (text, record) => (
         <div>
@@ -211,13 +208,12 @@ const Expenses = () => {
             {text === "Approved" && (
               <span className="custom-badge status-green">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -226,13 +222,12 @@ const Expenses = () => {
             {text === "Pending" && (
               <span className="custom-badge status-orange">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -241,13 +236,12 @@ const Expenses = () => {
             {text === "Declined" && (
               <span className="custom-badge status-pink">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -256,13 +250,12 @@ const Expenses = () => {
             {text === "New" && (
               <span className="custom-badge status-purple">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -271,13 +264,12 @@ const Expenses = () => {
             {text === "Rejected" && (
               <span className="custom-badge status-pink ">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -296,33 +288,29 @@ const Expenses = () => {
     //   ),
     // },
     {
-        title: "",
-        dataIndex: "FIELD8",
-        render: (text, record) => (
-          <>
-            <div className="text-end">
-              <div className="dropdown dropdown-action">
-                <Link
-                  to="#"
-                  className="action-icon dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i className="fas fa-ellipsis-v" />
+      title: "",
+      dataIndex: "FIELD8",
+      render: (text, record) => (
+        <>
+          <div className="text-end">
+            <div className="dropdown dropdown-action">
+              <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i className="fas fa-ellipsis-v" />
+              </Link>
+              <div className="dropdown-menu dropdown-menu-end">
+                <Link className="dropdown-item" to="/edit-expenses">
+                  <i className="far fa-edit me-2" />
+                  Edit
                 </Link>
-                <div className="dropdown-menu dropdown-menu-end">
-                  <Link className="dropdown-item" to="/edit-expenses">
-                    <i className="far fa-edit me-2" />
-                    Edit
-                  </Link>
-                  <Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_patient">
-                       <i className="fa fa-trash-alt m-r-5"></i> Delete</Link>
-                </div>
+                <Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_patient">
+                  <i className="fa fa-trash-alt m-r-5"></i> Delete
+                </Link>
               </div>
             </div>
-          </>
-        ),
-      },
+          </div>
+        </>
+      ),
+    },
   ];
   return (
     <>
@@ -338,7 +326,7 @@ const Expenses = () => {
                   <div className="col-sm-12">
                     <ul className="breadcrumb">
                       <li className="breadcrumb-item">
-                       <Link to="#">Accounts</Link>
+                        <Link to="#">Accounts</Link>
                       </li>
                       <li className="breadcrumb-item">
                         <i className="feather-chevron-right">
@@ -364,27 +352,17 @@ const Expenses = () => {
                               <div className="doctor-search-blk">
                                 <div className="top-nav-search table-search-blk">
                                   <form>
-                                    <input
-                                      type="text"
-                                      className="form-control"
-                                      placeholder="Search here"
-                                    />
-                                   <Link className="btn">
-                                      <img src={searchnormal} alt="#"/>
+                                    <input type="text" className="form-control" placeholder="Search here" />
+                                    <Link className="btn">
+                                      <img src={searchnormal} alt="#" />
                                     </Link>
                                   </form>
                                 </div>
                                 <div className="add-group">
-                                  <Link
-                                    to="/addexpense"
-                                    className="btn btn-primary add-pluss ms-2"
-                                  >
+                                  <Link to="/add-expense" className="btn btn-primary add-pluss ms-2">
                                     <img src={plusicon} alt="#" />
                                   </Link>
-                                 <Link
-                                    to="#"
-                                    className="btn btn-primary doctor-refresh ms-2"
-                                  >
+                                  <Link to="#" className="btn btn-primary doctor-refresh ms-2">
                                     <img src={refreshicon} alt="#" />
                                   </Link>
                                 </div>
@@ -392,16 +370,16 @@ const Expenses = () => {
                             </div>
                           </div>
                           <div className="col-auto text-end float-end ms-auto download-grp">
-                           <Link to="#" className=" me-2">
+                            <Link to="#" className=" me-2">
                               <img src={pdficon} alt="#" />
                             </Link>
-                           <Link to="#" className=" me-2">
+                            <Link to="#" className=" me-2">
                               <img src={pdficon2} alt="#" />
                             </Link>
-                           <Link to="#" className=" me-2">
+                            <Link to="#" className=" me-2">
                               <img src={pdficon3} alt="#" />
                             </Link>
-                           <Link to="#">
+                            <Link to="#">
                               <img src={pdficon4} alt="#" />
                             </Link>
                           </div>
@@ -423,31 +401,30 @@ const Expenses = () => {
                                 <Select
                                   defaultValue={selectedOption}
                                   onChange={setSelectedOption}
-                                  options={employee}
                                   menuPortalTarget={document.body}
-                                  styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                                   id="search-commodity"
                                   components={{
-                                    IndicatorSeparator: () => null
+                                    IndicatorSeparator: () => null,
                                   }}
                                   styles={{
+                                    menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                     control: (baseStyles, state) => ({
                                       ...baseStyles,
-                                      borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                       boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                      '&:hover': {
-                                        borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                      borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                      boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                      "&:hover": {
+                                        borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                       },
-                                      borderRadius: '10px',
+                                      borderRadius: "10px",
                                       fontSize: "14px",
-                                        minHeight: "45px",
+                                      minHeight: "45px",
                                     }),
                                     dropdownIndicator: (base, state) => ({
                                       ...base,
-                                      transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                      transition: '250ms',
-                                      width: '35px',
-                                      height: '35px',
+                                      transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                      transition: "250ms",
+                                      width: "35px",
+                                      height: "35px",
                                     }),
                                   }}
                                 />
@@ -459,31 +436,30 @@ const Expenses = () => {
                                 <Select
                                   defaultValue={selectedOption}
                                   onChange={setSelectedOption}
-                                  options={payment}
                                   menuPortalTarget={document.body}
-                                  styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                                   id="search-commodity"
                                   components={{
-                                    IndicatorSeparator: () => null
+                                    IndicatorSeparator: () => null,
                                   }}
                                   styles={{
+                                    menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                     control: (baseStyles, state) => ({
                                       ...baseStyles,
-                                      borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                       boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                      '&:hover': {
-                                        borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                      borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                      boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                      "&:hover": {
+                                        borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                       },
-                                      borderRadius: '10px',
+                                      borderRadius: "10px",
                                       fontSize: "14px",
-                                        minHeight: "45px",
+                                      minHeight: "45px",
                                     }),
                                     dropdownIndicator: (base, state) => ({
                                       ...base,
-                                      transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                      transition: '250ms',
-                                      width: '35px',
-                                      height: '35px',
+                                      transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                      transition: "250ms",
+                                      width: "35px",
+                                      height: "35px",
                                     }),
                                   }}
                                 />
@@ -513,10 +489,7 @@ const Expenses = () => {
                             </div>
                             <div className="col-12 col-md-6 col-xl-4">
                               <div className="doctor-submit">
-                                <button
-                                  type="submit"
-                                  className="btn btn-primary submit-list-form me-2"
-                                >
+                                <button type="submit" className="btn btn-primary submit-list-form me-2">
                                   Search
                                 </button>
                               </div>
@@ -528,12 +501,11 @@ const Expenses = () => {
                         <Table
                           className="table table-stripped table-hover datatable thead-light "
                           pagination={{
-                              total: datasource.length,
-                              showTotal: (total, range) =>
-                                  `Showing ${range[0]} to ${range[1]} of ${total} entries`,
-                              // showSizeChanger: true,
-                              onShowSizeChange: onShowSizeChange,
-                              itemRender: itemRender,
+                            total: datasource.length,
+                            showTotal: (total, range) => `Showing ${range[0]} to ${range[1]} of ${total} entries`,
+                            // showSizeChanger: true,
+                            onShowSizeChange: onShowSizeChange,
+                            itemRender: itemRender,
                           }}
                           columns={column}
                           dataSource={datasource}
@@ -554,26 +526,22 @@ const Expenses = () => {
                 <div className="drop-scroll msg-list-scroll" id="msg_list">
                   <ul className="list-box">
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">R</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Richard Miles
-                            </span>
+                            <span className="message-author">Richard Miles</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item new-message">
                           <div className="list-left">
                             <span className="avatar">J</span>
@@ -582,34 +550,28 @@ const Expenses = () => {
                             <span className="message-author">John Doe</span>
                             <span className="message-time">1 Aug</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">T</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Tarah Shropshire
-                            </span>
+                            <span className="message-author">Tarah Shropshire</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">M</span>
@@ -618,91 +580,73 @@ const Expenses = () => {
                             <span className="message-author">Mike Litorus</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">C</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Catherine Manseau
-                            </span>
+                            <span className="message-author">Catherine Manseau</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">D</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Domenic Houston
-                            </span>
+                            <span className="message-author">Domenic Houston</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">B</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Buster Wigton
-                            </span>
+                            <span className="message-author">Buster Wigton</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">R</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Rolland Webber
-                            </span>
+                            <span className="message-author">Rolland Webber</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">C</span>
@@ -711,53 +655,43 @@ const Expenses = () => {
                             <span className="message-author">Claire Mapes</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">M</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Melita Faucher
-                            </span>
+                            <span className="message-author">Melita Faucher</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">J</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Jeffery Lalor
-                            </span>
+                            <span className="message-author">Jeffery Lalor</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">L</span>
@@ -766,28 +700,22 @@ const Expenses = () => {
                             <span className="message-author">Loren Gatlin</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
                     </li>
                     <li>
-                     <Link to="#">
+                      <Link to="#">
                         <div className="list-item">
                           <div className="list-left">
                             <span className="avatar">T</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Tarah Shropshire
-                            </span>
+                            <span className="message-author">Tarah Shropshire</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -795,27 +723,19 @@ const Expenses = () => {
                   </ul>
                 </div>
                 <div className="topnav-dropdown-footer">
-                 <Link to="#">See all messages</Link>
+                  <Link to="#">See all messages</Link>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            id="delete_patient"
-            className="modal fade delete-modal"
-            role="dialog"
-          >
+          <div id="delete_patient" className="modal fade delete-modal" role="dialog">
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
                 <div className="modal-body text-center">
                   <img src={imagesend} alt="#" width={50} height={46} />
                   <h3>Are you sure want to delete this ?</h3>
                   <div className="m-t-20">
-                   <Link
-                      to="#"
-                      className="btn btn-white me-2"
-                      data-bs-dismiss="modal"
-                    >
+                    <Link to="#" className="btn btn-white me-2" data-bs-dismiss="modal">
                       Close
                     </Link>
                     <button type="submit" className="btn btn-danger">
@@ -826,7 +746,6 @@ const Expenses = () => {
               </div>
             </div>
           </div>
-
         </div>
       </>
     </>

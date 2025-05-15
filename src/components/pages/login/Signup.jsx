@@ -1,32 +1,23 @@
 import React from "react";
-import {
-  login02,
-  loginicon01,
-  loginicon02,
-  loginicon03,
-  loginlogo,
-} from "../../imagepath";
+import { login02, loginicon01, loginicon02, loginicon03, loginlogo } from "../../imagepath";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Eye, EyeOff } from "feather-icons-react/build/IconComponents";
 
 const Signup = () => {
-
   const [passwordVisible, setPasswordVisible] = useState(false);
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState("");
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
   const [passwordVisible1, setPasswordVisible1] = useState(false);
-  const [password1, setPassword1] = useState('');
+  const [password1, setPassword1] = useState("");
 
   const togglePasswordVisibility1 = () => {
     setPasswordVisible1(!passwordVisible1);
   };
 
-
-  
   return (
     <div>
       <div className="main-wrapper login-body">
@@ -49,7 +40,7 @@ const Signup = () => {
                     <div className="login-right-wrap">
                       <div className="account-logo">
                         <Link to="/admin-dashboard">
-                          <img src={loginlogo}alt="#"/>
+                          <img src={loginlogo} alt="#" />
                         </Link>
                       </div>
                       <h2>Getting Started</h2>
@@ -72,35 +63,36 @@ const Signup = () => {
                             Password <span className="login-danger">*</span>
                           </label>
                           <input
-                          type={passwordVisible ? 'password' : ''}
-                          className="form-control pass-input"
-                          value={password}
-                          onChange={(e) => setPassword(e.target.value)}
-                        />
-                        <span
-                          className="toggle-password"
-                          onClick={togglePasswordVisibility}
-                        >
-                          {passwordVisible ? <EyeOff className="react-feather-custom" /> : <Eye className="react-feather-custom" />}
-                        </span>
+                            type={passwordVisible ? "password" : ""}
+                            className="form-control pass-input"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                          />
+                          <span className="toggle-password" onClick={togglePasswordVisibility}>
+                            {passwordVisible ? (
+                              <EyeOff className="react-feather-custom" />
+                            ) : (
+                              <Eye className="react-feather-custom" />
+                            )}
+                          </span>
                         </div>
                         <div className="form-group">
                           <label>
-                            Confirm Password{" "}
-                            <span className="login-danger">*</span>
+                            Confirm Password <span className="login-danger">*</span>
                           </label>
                           <input
-                          type={passwordVisible1 ? 'password' : ''}
-                          className="form-control pass-input"
-                          value={password1}
-                          onChange={(e) => setPassword1(e.target.value)}
-                        />
-                        <span
-                          className="toggle-password"
-                          onClick={togglePasswordVisibility1}
-                        >
-                          {passwordVisible1 ? <EyeOff className="react-feather-custom" /> : <Eye className="react-feather-custom" />}
-                        </span>
+                            type={passwordVisible1 ? "password" : ""}
+                            className="form-control pass-input"
+                            value={password1}
+                            onChange={(e) => setPassword1(e.target.value)}
+                          />
+                          <span className="toggle-password" onClick={togglePasswordVisibility1}>
+                            {passwordVisible1 ? (
+                              <EyeOff className="react-feather-custom" />
+                            ) : (
+                              <Eye className="react-feather-custom" />
+                            )}
+                          </span>
                           {/* <input
                             className="form-control pass-input-confirm"
                             type="password"
@@ -111,20 +103,15 @@ const Signup = () => {
                           <div className="remember-me">
                             <label className="custom_check mr-2 mb-0 d-inline-flex remember-me">
                               {" "}
-                              I agree to the{" "}
-                              <Link to="#">&nbsp; terms of service </Link>
-                              &nbsp; and{" "}
-                              <Link to="#">&nbsp; privacy policy </Link>
+                              I agree to the <Link to="#">&nbsp; terms of service </Link>
+                              &nbsp; and <Link to="#">&nbsp; privacy policy </Link>
                               <input type="checkbox" name="radio" />
                               <span className="checkmark" />
                             </label>
                           </div>
                         </div>
                         <div className="form-group login-btn">
-                          <button
-                            className="btn btn-primary btn-block"
-                            type="submit"
-                          >
+                          <button className="btn btn-primary btn-block" type="submit">
                             Sign up
                           </button>
                         </div>
@@ -137,13 +124,13 @@ const Signup = () => {
                         {/* Social Login */}
                         <div className="social-login">
                           <Link to="#">
-                            <img src={loginicon01}alt="#"/>
+                            <img src={loginicon01} alt="#" />
                           </Link>
                           <Link to="#">
-                            <img src={loginicon02}alt="#"/>
+                            <img src={loginicon02} alt="#" />
                           </Link>
                           <Link to="#">
-                            <img src={loginicon03}alt="#"/>
+                            <img src={loginicon03} alt="#" />
                           </Link>
                         </div>
                         {/* /Social Login */}

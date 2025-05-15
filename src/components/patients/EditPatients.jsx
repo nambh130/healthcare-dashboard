@@ -44,11 +44,7 @@ const EditPatients = () => {
   return (
     <div>
       <Header />
-      <Sidebar
-        id="menu-item2"
-        id1="menu-items2"
-        activeClassName="edit-patient"
-      />
+      <Sidebar id="menu-item2" id1="menu-items2" activeClassName="edit-patient" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -87,11 +83,7 @@ const EditPatients = () => {
                             <label>
                               First Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Daniel"
-                            />
+                            <input className="form-control" type="text" defaultValue="Daniel" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -99,11 +91,7 @@ const EditPatients = () => {
                             <label>
                               Last Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Bruk"
-                            />
+                            <input className="form-control" type="text" defaultValue="Bruk" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -111,11 +99,7 @@ const EditPatients = () => {
                             <label>
                               User Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Daniel Bruk"
-                            />
+                            <input className="form-control" type="text" defaultValue="Daniel Bruk" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -123,11 +107,7 @@ const EditPatients = () => {
                             <label>
                               Mobile <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="+1 23 456890"
-                            />
+                            <input className="form-control" type="text" defaultValue="+1 23 456890" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -135,11 +115,7 @@ const EditPatients = () => {
                             <label>
                               Email <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="email"
-                              defaultValue="example@email.com"
-                            />
+                            <input className="form-control" type="email" defaultValue="example@email.com" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -158,8 +134,7 @@ const EditPatients = () => {
                         <div className="col-12 col-md-6 col-xl-6">
                           <div className="form-group local-forms">
                             <label>
-                              Confirm Password{" "}
-                              <span className="login-danger">*</span>
+                              Confirm Password <span className="login-danger">*</span>
                             </label>
                             <input
                               className="form-control"
@@ -172,8 +147,7 @@ const EditPatients = () => {
                         <div className="col-12 col-md-6 col-xl-6">
                           <div className="form-group local-forms cal-icon">
                             <label>
-                              Date Of Birth{" "}
-                              <span className="login-danger">*</span>
+                              Date Of Birth <span className="login-danger">*</span>
                             </label>
                             <DatePicker
                               className="form-control datetimepicker"
@@ -195,22 +169,13 @@ const EditPatients = () => {
                             </label>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                  defaultChecked="true"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" defaultChecked="true" />
                                 Male
                               </label>
                             </div>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" />
                                 Female
                               </label>
                             </div>
@@ -221,24 +186,15 @@ const EditPatients = () => {
                             <label>
                               Education <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="M.B.B.S, M.S."
-                            />
+                            <input className="form-control" type="text" defaultValue="M.B.B.S, M.S." />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
                           <div className="form-group local-forms">
                             <label>
-                              Designation{" "}
-                              <span className="login-danger">*</span>
+                              Designation <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Physician"
-                            />
+                            <input className="form-control" type="text" defaultValue="Physician" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -252,30 +208,29 @@ const EditPatients = () => {
                               options={department}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1);",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
-
                           </div>
                         </div>
                         <div className="col-12 col-sm-12">
@@ -287,9 +242,7 @@ const EditPatients = () => {
                               className="form-control"
                               rows={3}
                               cols={30}
-                              defaultValue={
-                                "101, Elanxa Apartments, 340 N Madison Avenue"
-                              }
+                              defaultValue={"101, Elanxa Apartments, 340 N Madison Avenue"}
                             />
                           </div>
                         </div>
@@ -301,40 +254,34 @@ const EditPatients = () => {
                             <Select
                               defaultValue={selectedOption}
                               onChange={setSelectedOption}
-                              options={option}
+                              calendar
                               menuPortalTarget={document.body}
-                              styles={{
-                                menuPortal: (base) => ({
-                                  ...base,
-                                  zIndex: 9999,
-                                }),
-                              }}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
+                                menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
-
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-3">
@@ -345,47 +292,40 @@ const EditPatients = () => {
                             <Select
                               defaultValue={selectedOption}
                               onChange={setSelectedOption}
-                              options={options}
+                              calendar
                               menuPortalTarget={document.body}
-                              styles={{
-                                menuPortal: (base) => ({
-                                  ...base,
-                                  zIndex: 9999,
-                                }),
-                              }}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
+                                menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
-
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-3">
                           <div className="form-group local-forms">
                             <label>
-                              State/Province{" "}
-                              <span className="login-danger">*</span>
+                              State/Province <span className="login-danger">*</span>
                             </label>
                             <Select
                               defaultValue={selectedOption}
@@ -393,26 +333,26 @@ const EditPatients = () => {
                               options={value}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1);",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
@@ -421,21 +361,15 @@ const EditPatients = () => {
                         <div className="col-12 col-md-6 col-xl-3">
                           <div className="form-group local-forms">
                             <label>
-                              Postal Code{" "}
-                              <span className="login-danger">*</span>
+                              Postal Code <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue={91403}
-                            />
+                            <input className="form-control" type="text" defaultValue={91403} />
                           </div>
                         </div>
                         <div className="col-12 col-sm-12">
                           <div className="form-group local-forms">
                             <label>
-                              Start Biography{" "}
-                              <span className="login-danger">*</span>
+                              Start Biography <span className="login-danger">*</span>
                             </label>
                             <textarea
                               className="form-control"
@@ -475,16 +409,10 @@ const EditPatients = () => {
                                 Choose File
                               </label>
                             </div> */}
-                            <div
-                              className="upload-images upload-size"
-                              style={{ display: show ? "none" : "flex" }}
-                            >
+                            <div className="upload-images upload-size" style={{ display: show ? "none" : "flex" }}>
                               <img src={favicon} alt="Image" />
                               <Link to="#" className="btn-icon logo-hide-btn">
-                                <i
-                                  className="feather-x-circle"
-                                  onClick={() => setShow((s) => !s)}
-                                >
+                                <i className="feather-x-circle" onClick={() => setShow((s) => !s)}>
                                   <FeatherIcon icon="x-circle" />
                                 </i>
                               </Link>
@@ -498,22 +426,13 @@ const EditPatients = () => {
                             </label>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender1"
-                                  className="form-check-input"
-                                  defaultChecked="true"
-                                />
+                                <input type="radio" name="gender1" className="form-check-input" defaultChecked="true" />
                                 Active
                               </label>
                             </div>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender1"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender1" className="form-check-input" />
                                 In Active
                               </label>
                             </div>
@@ -521,16 +440,10 @@ const EditPatients = () => {
                         </div>
                         <div className="col-12">
                           <div className="doctor-submit text-end">
-                            <button
-                              type="submit"
-                              className="btn btn-primary submit-form me-2"
-                            >
+                            <button type="submit" className="btn btn-primary submit-form me-2">
                               Submit
                             </button>
-                            <button
-                              type="submit"
-                              className="btn btn-primary cancel-form"
-                            >
+                            <button type="submit" className="btn btn-primary cancel-form">
                               Cancel
                             </button>
                           </div>
@@ -559,9 +472,7 @@ const EditPatients = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -576,9 +487,7 @@ const EditPatients = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -590,15 +499,10 @@ const EditPatients = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -613,9 +517,7 @@ const EditPatients = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -627,15 +529,10 @@ const EditPatients = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -647,15 +544,10 @@ const EditPatients = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -667,15 +559,10 @@ const EditPatients = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -687,15 +574,10 @@ const EditPatients = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -710,9 +592,7 @@ const EditPatients = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -727,9 +607,7 @@ const EditPatients = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -744,9 +622,7 @@ const EditPatients = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -761,9 +637,7 @@ const EditPatients = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -775,14 +649,10 @@ const EditPatients = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -795,11 +665,7 @@ const EditPatients = () => {
             </div>
           </div>
         </div>
-        <div
-          id="delete_patient"
-          className="modal fade delete-modal"
-          role="dialog"
-        >
+        <div id="delete_patient" className="modal fade delete-modal" role="dialog">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-body text-center">
@@ -807,11 +673,7 @@ const EditPatients = () => {
                 <h3>Are you sure want to delete this ?</h3>
                 <div className="m-t-20">
                   {" "}
-                  <Link
-                    to="#"
-                    className="btn btn-white"
-                    data-bs-dismiss="modal"
-                  >
+                  <Link to="#" className="btn btn-white" data-bs-dismiss="modal">
                     Close
                   </Link>
                   <button type="submit" className="btn btn-danger">

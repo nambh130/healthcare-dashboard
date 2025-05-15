@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import { DatePicker} from "antd";
+import { DatePicker } from "antd";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
-import Select from 'react-select';
-import { Link } from 'react-router-dom';
+import Select from "react-select";
+import { Link } from "react-router-dom";
 import { pdficon, pdficon2, pdficon3, pdficon4, plusicon, refreshicon, searchnormal } from "../imagepath";
+
 const Attendence = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [month, setMonth] = useState([
@@ -33,7 +34,7 @@ const Attendence = () => {
     <>
       <div className="main-wrapper">
         <Header />
-        <Sidebar id='menu-item3' id1='menu-items3' activeClassName='attendance'/>
+        <Sidebar id="menu-item3" id1="menu-items3" activeClassName="attendance" />
         <div className="page-wrapper">
           <div className="content">
             {/* Page Header */}
@@ -42,7 +43,7 @@ const Attendence = () => {
                 <div className="col-sm-12">
                   <ul className="breadcrumb">
                     <li className="breadcrumb-item">
-                     <Link to="#">Staffs </Link>
+                      <Link to="#">Staffs </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
@@ -68,63 +69,35 @@ const Attendence = () => {
                             <div className="doctor-search-blk">
                               <div className="top-nav-search table-search-blk">
                                 <form>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Search here"
-                                  />
-                                 <Link className="btn">
-                                    <img
-                                      src={searchnormal}
-                                      alt="#"
-                                    />
+                                  <input type="text" className="form-control" placeholder="Search here" />
+                                  <Link className="btn">
+                                    <img src={searchnormal} alt="#" />
                                   </Link>
                                 </form>
                               </div>
                               <div className="add-group">
-                               <Link
-                                  to="#"
-                                  className="btn btn-primary add-pluss ms-2"
-                                >
+                                <Link to="#" className="btn btn-primary add-pluss ms-2">
                                   <img src={plusicon} alt="#" />
                                 </Link>
-                               <Link
-                                  to="#"
-                                  className="btn btn-primary doctor-refresh ms-2"
-                                >
-                                  <img
-                                    src={refreshicon}
-                                    alt="#"
-                                  />
+                                <Link to="#" className="btn btn-primary doctor-refresh ms-2">
+                                  <img src={refreshicon} alt="#" />
                                 </Link>
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="col-auto text-end float-end ms-auto download-grp">
-                         <Link to="#" className=" me-2">
-                            <img
-                              src={pdficon}
-                              alt="#"
-                            />
+                          <Link to="#" className=" me-2">
+                            <img src={pdficon} alt="#" />
                           </Link>
-                         <Link to="#" className=" me-2">
-                            <img
-                              src={pdficon2}
-                              alt="#"
-                            />
+                          <Link to="#" className=" me-2">
+                            <img src={pdficon2} alt="#" />
                           </Link>
-                         <Link to="#" className=" me-2">
-                            <img
-                              src={pdficon3}
-                              alt="#"
-                            />
+                          <Link to="#" className=" me-2">
+                            <img src={pdficon3} alt="#" />
                           </Link>
-                         <Link to="#">
-                            <img
-                              src={pdficon4}
-                              alt="#"
-                            />
+                          <Link to="#">
+                            <img src={pdficon4} alt="#" />
                           </Link>
                         </div>
                       </div>
@@ -143,76 +116,70 @@ const Attendence = () => {
                             <div className="form-group local-forms">
                               <label>Year </label>
                               <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={year}
-                              menuPortalTarget={document.body}
-                              styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
-                              id="search-commodity"
-                              components={{
-                                IndicatorSeparator: () => null
-                              }}
-
-                              styles={{
-                                control: (baseStyles, state) => ({
-                                  ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
-                                  },
-                                  borderRadius: '10px',
-                                  fontSize: "14px",
+                                defaultValue={selectedOption}
+                                onChange={setSelectedOption}
+                                menuPortalTarget={document.body}
+                                id="search-commodity"
+                                components={{
+                                  IndicatorSeparator: () => null,
+                                }}
+                                styles={{
+                                  menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+                                  control: (baseStyles, state) => ({
+                                    ...baseStyles,
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                    boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                    "&:hover": {
+                                      borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                    },
+                                    borderRadius: "10px",
+                                    fontSize: "14px",
                                     minHeight: "45px",
-                                }),
-                                dropdownIndicator: (base, state) => ({
-                                  ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
-                                }),
-                              }}
-                            />
-
+                                  }),
+                                  dropdownIndicator: (base, state) => ({
+                                    ...base,
+                                    transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                    transition: "250ms",
+                                    width: "35px",
+                                    height: "35px",
+                                  }),
+                                }}
+                              />
                             </div>
                           </div>
                           <div className="col-12 col-md-6 col-xl-4">
                             <div className="form-group local-forms">
                               <label>Month </label>
                               <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={month}
-                              menuPortalTarget={document.body}
-                              styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
-                              id="search-commodity"
-                              components={{
-                                IndicatorSeparator: () => null
-                              }}
-
-                              styles={{
-                                control: (baseStyles, state) => ({
-                                  ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
-                                  },
-                                  borderRadius: '10px',
-                                  fontSize: "14px",
+                                defaultValue={selectedOption}
+                                onChange={setSelectedOption}
+                                menuPortalTarget={document.body}
+                                id="search-commodity"
+                                components={{
+                                  IndicatorSeparator: () => null,
+                                }}
+                                styles={{
+                                  menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+                                  control: (baseStyles, state) => ({
+                                    ...baseStyles,
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                    boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                    "&:hover": {
+                                      borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                    },
+                                    borderRadius: "10px",
+                                    fontSize: "14px",
                                     minHeight: "45px",
-                                }),
-                                dropdownIndicator: (base, state) => ({
-                                  ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
-                                }),
-                              }}
-                            />
-
+                                  }),
+                                  dropdownIndicator: (base, state) => ({
+                                    ...base,
+                                    transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                    transition: "250ms",
+                                    width: "35px",
+                                    height: "35px",
+                                  }),
+                                }}
+                              />
                             </div>
                           </div>
                           <div className="col-12 col-md-6 col-xl-4">
@@ -245,10 +212,7 @@ const Attendence = () => {
                           </div>
                           <div className="col-12 col-md-6 col-xl-4">
                             <div className="doctor-submit">
-                              <button
-                                type="submit"
-                                className="btn btn-primary submit-list-form me-2"
-                              >
+                              <button type="submit" className="btn btn-primary submit-list-form me-2">
                                 Submit
                               </button>
                             </div>
@@ -323,8 +287,8 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
@@ -339,14 +303,7 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                  <FeatherIcon icon="check" />
+                                  <FeatherIcon icon="x" />
                                 </i>
                               </span>
                             </td>
@@ -365,10 +322,17 @@ const Attendence = () => {
                               </span>
                             </td>
                             <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -376,8 +340,8 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
@@ -390,22 +354,22 @@ const Attendence = () => {
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                  <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -413,36 +377,36 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -450,22 +414,22 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                           </tr>
@@ -476,147 +440,36 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td />
-                            <td />
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td />
-                            <td />
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="x" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td />
-                            <td />
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -624,22 +477,133 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td />
+                            <td />
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td />
+                            <td />
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td />
+                            <td />
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                           </tr>
@@ -650,36 +614,36 @@ const Attendence = () => {
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -687,36 +651,36 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="x" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -724,36 +688,36 @@ const Attendence = () => {
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -761,36 +725,36 @@ const Attendence = () => {
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
@@ -798,22 +762,22 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                           </tr>
@@ -824,82 +788,82 @@ const Attendence = () => {
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
+                                  <FeatherIcon icon="check" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
                                 <i className="feather-x">
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
                             <td />
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
                             <td />
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
@@ -910,82 +874,82 @@ const Attendence = () => {
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
                             <td />
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
                             <td />
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                           </tr>
@@ -995,96 +959,96 @@ const Attendence = () => {
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td />
-                            <td />
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
-                                </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td />
-                            <td />
-                            <td>
-                              <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td />
+                            <td />
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td />
+                            <td />
+                            <td>
+                              <span className="absent-table attent-status">
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
@@ -1095,69 +1059,69 @@ const Attendence = () => {
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
                             <td />
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
-                              </span>
-                            </td>
-                            <td>
-                              <span className="present-table attent-status">
-                                <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="present-table attent-status">
                                 <i className="feather-check">
-                                <FeatherIcon icon="check"/>
+                                  <FeatherIcon icon="check" />
+                                </i>
+                              </span>
+                            </td>
+                            <td>
+                              <span className="present-table attent-status">
+                                <i className="feather-check">
+                                  <FeatherIcon icon="check" />
                                 </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td />
                             <td />
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                             <td>
                               <span className="absent-table attent-status">
-                                <i className="feather-x" >
-                                <FeatherIcon icon="x"/>
-                                  </i>
+                                <i className="feather-x">
+                                  <FeatherIcon icon="x" />
+                                </i>
                               </span>
                             </td>
                           </tr>
@@ -1177,7 +1141,7 @@ const Attendence = () => {
               <div className="drop-scroll msg-list-scroll" id="msg_list">
                 <ul className="list-box">
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
@@ -1186,15 +1150,13 @@ const Attendence = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item new-message">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -1203,35 +1165,28 @@ const Attendence = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -1240,95 +1195,73 @@ const Attendence = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
@@ -1337,15 +1270,13 @@ const Attendence = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -1354,15 +1285,13 @@ const Attendence = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -1371,15 +1300,13 @@ const Attendence = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">L</span>
@@ -1388,28 +1315,22 @@ const Attendence = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -1417,7 +1338,7 @@ const Attendence = () => {
                 </ul>
               </div>
               <div className="topnav-dropdown-footer">
-               <Link to="#">See all messages</Link>
+                <Link to="#">See all messages</Link>
               </div>
             </div>
           </div>

@@ -1,31 +1,26 @@
-import React, { useState } from 'react'
-import Sidebar from '../Sidebar'
-import Header from '../Header'
-import { Link } from 'react-router-dom'
-import FeatherIcon from 'feather-icons-react/build/FeatherIcon'
+import React, { useState } from "react";
+import Sidebar from "../Sidebar";
+import Header from "../Header";
+import { Link } from "react-router-dom";
+import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
-const Settingssociallinks = () => {
-
+const SettingsSocialLinks = () => {
   const [inputFields, setInputFields] = useState([{}]);
 
   const addInputField = () => {
-    setInputFields([...inputFields, {
-    }])
-
-  }
+    setInputFields([...inputFields, {}]);
+  };
   const removeInputFields = (index) => {
     const rows = [...inputFields];
     rows.splice(index, 1);
     setInputFields(rows);
-  }
+  };
   const handleChanges = (index, evnt) => {
-
     const { name, value } = evnt.target;
     const list = [...inputFields];
     list[index][name] = value;
     setInputFields(list);
-
-  }
+  };
 
   return (
     <div>
@@ -44,8 +39,8 @@ const Settingssociallinks = () => {
                   </li>
                   <li className="breadcrumb-item">
                     <i className="feather-chevron-right">
-                    <FeatherIcon icon="chevron-right"/>
-                      </i>
+                      <FeatherIcon icon="chevron-right" />
+                    </i>
                   </li>
                   <li className="breadcrumb-item active">Settings</li>
                 </ul>
@@ -55,53 +50,53 @@ const Settingssociallinks = () => {
           {/* /Page Header */}
           <div className="settings-menu-links">
             <ul className="nav nav-tabs menu-tabs">
-              <li className="nav-item ">
-                <Link className="nav-link" to="/settings">
+              <li className="nav-item active">
+                <Link className="nav-link " to="/settings">
                   General Settings
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Link className="nav-link" to="/localization">
                   Localization
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/paymentsetting">
+                <Link className="nav-link" to="/payment-setting">
                   Payment Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsemail">
+                <Link className="nav-link" to="/settings-email">
                   Email Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingssocialmedia">
+                <Link className="nav-link" to="/settings-social-media">
                   Social Media Login
                 </Link>
               </li>
-              <li className="nav-item active">
-                <Link className="nav-link" to="/settingssociallink">
+              <li className="nav-item">
+                <Link className="nav-link" to="/settings-social-link">
                   Social Links
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsseo">
+                <Link className="nav-link" to="/settings-seo">
                   SEO Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsthem">
+                <Link className="nav-link" to="/settings-theme">
                   Theme Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingschangepassword">
+                <Link className="nav-link" to="/settings-change-password">
                   Change Password
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsothers">
+                <Link className="nav-link" to="/settings-others">
                   Others
                 </Link>
               </li>
@@ -124,11 +119,7 @@ const Settingssociallinks = () => {
                                 <FeatherIcon icon="facebook" />
                               </i>
                             </button>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="https://www.facebook.com"
-                            />
+                            <input type="text" className="form-control" placeholder="https://www.facebook.com" />
                             <div>
                               <Link to="#" className="btn trash" onClick={removeInputFields}>
                                 <i className="feather-trash-2">
@@ -147,11 +138,7 @@ const Settingssociallinks = () => {
                                 <FeatherIcon icon="twitter" />
                               </i>
                             </button>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="https://www.twitter.com"
-                            />
+                            <input type="text" className="form-control" placeholder="https://www.twitter.com" />
                             <div>
                               <Link to="#" className="btn trash" onClick={removeInputFields}>
                                 <i className="feather-trash-2">
@@ -170,11 +157,7 @@ const Settingssociallinks = () => {
                                 <FeatherIcon icon="youtube" />
                               </i>
                             </button>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="https://www.youtube.com"
-                            />
+                            <input type="text" className="form-control" placeholder="https://www.youtube.com" />
                             <div>
                               <Link to="#" className="btn trash" onClick={removeInputFields}>
                                 <i className="feather-trash-2">
@@ -193,11 +176,7 @@ const Settingssociallinks = () => {
                                 <FeatherIcon icon="linkedin" />
                               </i>
                             </button>
-                            <input
-                              type="text"
-                              className="form-control"
-                              placeholder="https://www.linkedin.com"
-                            />
+                            <input type="text" className="form-control" placeholder="https://www.linkedin.com" />
                             <div>
                               <Link to="#" className="btn trash" onClick={removeInputFields}>
                                 <i className="feather-trash-2">
@@ -208,31 +187,29 @@ const Settingssociallinks = () => {
                           </div>
                         </div>
                       </div>
-                      {
-                        inputFields.map((data, index) => {
-                          return (
-                            <div className="links-info" key={index} onChange={(evnt) => handleChanges(index, evnt)}>
-                              <div className="row form-row links-cont">
-                                <div className="form-group form-placeholder d-flex">
-                                  <button className="btn social-icon">
-                                    <i><FeatherIcon icon="github" /></i>
-                                  </button>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Social Link"
-                                  />
-                                  <div>
-                                    <Link to="#" className="btn trash" onClick={removeInputFields}>
-                                      <i><FeatherIcon icon="trash-2" /></i>
-                                    </Link>
-                                  </div>
+                      {inputFields.map((data, index) => {
+                        return (
+                          <div className="links-info" key={index} onChange={(evnt) => handleChanges(index, evnt)}>
+                            <div className="row form-row links-cont">
+                              <div className="form-group form-placeholder d-flex">
+                                <button className="btn social-icon">
+                                  <i>
+                                    <FeatherIcon icon="github" />
+                                  </i>
+                                </button>
+                                <input type="text" className="form-control" placeholder="Social Link" />
+                                <div>
+                                  <Link to="#" className="btn trash" onClick={removeInputFields}>
+                                    <i>
+                                      <FeatherIcon icon="trash-2" />
+                                    </i>
+                                  </Link>
                                 </div>
                               </div>
                             </div>
-                          )
-                        })
-                      }
+                          </div>
+                        );
+                      })}
                     </div>
                     <div className="form-group text-end">
                       <Link to="#" className="btn add-links" onClick={addInputField}>
@@ -241,7 +218,9 @@ const Settingssociallinks = () => {
                     </div>
                     <div className="form-group mb-0">
                       <div className="settings-btns">
-                        <button type="submit" className="border-0 btn btn-primary btn-gradient-primary btn-rounded me-2">
+                        <button
+                          type="submit"
+                          className="border-0 btn btn-primary btn-gradient-primary btn-rounded me-2">
                           Submit
                         </button>
                         <button type="submit" className="btn btn-secondary btn-rounded">
@@ -257,10 +236,8 @@ const Settingssociallinks = () => {
         </div>
         {/* /Page Content */}
       </div>
-
-
     </div>
-  )
-}
+  );
+};
 
-export default Settingssociallinks
+export default SettingsSocialLinks;

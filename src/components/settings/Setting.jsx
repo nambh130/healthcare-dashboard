@@ -63,42 +63,42 @@ const Setting = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/paymentsetting">
+                <Link className="nav-link" to="/payment-setting">
                   Payment Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsemail">
+                <Link className="nav-link" to="/settings-email">
                   Email Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingssocialmedia">
+                <Link className="nav-link" to="/settings-social-media">
                   Social Media Login
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingssociallink">
+                <Link className="nav-link" to="/settings-social-link">
                   Social Links
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsseo">
+                <Link className="nav-link" to="/settings-seo">
                   SEO Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsthem">
+                <Link className="nav-link" to="/settings-theme">
                   Theme Settings
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingschangepassword">
+                <Link className="nav-link" to="/settings-change-password">
                   Change Password
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/settingsothers">
+                <Link className="nav-link" to="/settings-others">
                   Others
                 </Link>
               </li>
@@ -117,11 +117,7 @@ const Setting = () => {
                         <label>
                           Website Name <span className="star-red">*</span>
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Website Name"
-                        />
+                        <input type="text" className="form-control" placeholder="Enter Website Name" />
                       </div>
                       <div className="form-group">
                         <p className="settings-label">
@@ -145,16 +141,10 @@ const Setting = () => {
                         <h6 className="settings-size">
                           Recommended image size is <span>150px x 150px</span>
                         </h6>
-                        <div
-                          className="upload-images"
-                          style={{ display: show ? "none" : "" }}
-                        >
+                        <div className="upload-images" style={{ display: show ? "none" : "" }}>
                           <img src={favicon} alt="Image" />
                           <Link to="#" className="btn-icon logo-hide-btn">
-                            <i
-                              className="feather-x-circle crossmark"
-                              onClick={() => setShow((s) => !s)}
-                            >
+                            <i className="feather-x-circle crossmark" onClick={() => setShow((s) => !s)}>
                               <FeatherIcon icon="x-circle" />
                             </i>
                           </Link>
@@ -180,26 +170,13 @@ const Setting = () => {
                           </label>
                         </div>
                         <h6 className="settings-size">
-                          Recommended image size is{" "}
-                          <span>16px x 16px or 32px x 32px</span>
+                          Recommended image size is <span>16px x 16px or 32px x 32px</span>
                         </h6>
-                        <h6 className="settings-size mt-1">
-                          Accepted formats: only png and ico
-                        </h6>
-                        <div
-                          className="upload-images upload-size"
-                          style={{ display: show ? "none" : "" }}
-                        >
-                          <img
-                            className="favicon-changes"
-                            src={favicon}
-                            alt="Image"
-                          />
+                        <h6 className="settings-size mt-1">Accepted formats: only png and ico</h6>
+                        <div className="upload-images upload-size" style={{ display: show ? "none" : "" }}>
+                          <img className="favicon-changes" src={favicon} alt="Image" />
                           <Link to="#" className="btn-icon logo-hide-btn">
-                            <i
-                              className="feather-x-circle"
-                              onClick={() => setShow((s) => !s)}
-                            >
+                            <i className="feather-x-circle" onClick={() => setShow((s) => !s)}>
                               <FeatherIcon icon="x-circle" />
                             </i>
                           </Link>
@@ -210,11 +187,7 @@ const Setting = () => {
                           <div className="form-group">
                             <div className="status-toggle d-flex justify-content-between align-items-center">
                               <p className="mb-0">RTL</p>
-                              <input
-                                type="checkbox"
-                                id="status_1"
-                                className="check"
-                              />
+                              <input type="checkbox" id="status_1" className="check" />
                               <label htmlFor="status_1" className="checktoggle">
                                 checkbox
                               </label>
@@ -226,14 +199,10 @@ const Setting = () => {
                         <div className="settings-btns">
                           <button
                             type="submit"
-                            className="border-0 btn btn-primary btn-gradient-primary btn-rounded me-2"
-                          >
+                            className="border-0 btn btn-primary btn-gradient-primary btn-rounded me-2">
                             Update
                           </button>
-                          <button
-                            type="submit"
-                            className="btn btn-secondary btn-rounded"
-                          >
+                          <button type="submit" className="btn btn-secondary btn-rounded">
                             Cancel
                           </button>
                         </div>
@@ -255,21 +224,13 @@ const Setting = () => {
                         <label>
                           Address Line 1 <span className="star-red">*</span>
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Address Line 1"
-                        />
+                        <input type="text" className="form-control" placeholder="Enter Address Line 1" />
                       </div>
                       <div className="form-group">
                         <label>
                           Address Line 2 <span className="star-red">*</span>
                         </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter Address Line 2"
-                        />
+                        <input type="text" className="form-control" placeholder="Enter Address Line 2" />
                       </div>
                       <div className="row">
                         <div className="col-md-6">
@@ -296,9 +257,7 @@ const Setting = () => {
                               styles={{
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused
-                                    ? "hsl(0, 0%, 80%)"
-                                    : "#86b7fe", // Change to navy blue (#000080)
+                                  borderColor: state.isFocused ? "hsl(0, 0%, 80%)" : "#86b7fe", // Change to navy blue (#000080)
                                   border: state.isFocused
                                     ? "2px solid rgba(46, 55, 164, 0.1)"
                                     : "2px solid rgba(46, 55, 164, 0.1)",
@@ -309,9 +268,7 @@ const Setting = () => {
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen
-                                    ? "rotate(-180deg)"
-                                    : "rotate(0)",
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
                                   transition: "250ms",
                                   width: "35px",
                                   height: "35px",
@@ -323,8 +280,7 @@ const Setting = () => {
                         <div className="col-md-6">
                           <div className="form-group">
                             <label>
-                              Zip/Postal Code{" "}
-                              <span className="star-red">*</span>
+                              Zip/Postal Code <span className="star-red">*</span>
                             </label>
                             <input type="text" className="form-control" />
                           </div>
@@ -340,29 +296,28 @@ const Setting = () => {
                               options={country}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1);",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
-
                             />
                             {/* <select className="select form-control">
                                                             <option selected="selected">Select</option>
@@ -376,17 +331,11 @@ const Setting = () => {
                       </div>
                       <div className="form-group mb-0">
                         <div className="settings-btns">
-                          <button
-                            type="submit"
-                            className="border-0 btn btn-primary btn-gradient-primary btn-rounded"
-                          >
+                          <button type="submit" className="border-0 btn btn-primary btn-gradient-primary btn-rounded">
                             Update
                           </button>
                           &nbsp;&nbsp;
-                          <button
-                            type="submit"
-                            className="btn btn-secondary btn-rounded"
-                          >
+                          <button type="submit" className="btn btn-secondary btn-rounded">
                             Cancel
                           </button>
                         </div>
@@ -416,9 +365,7 @@ const Setting = () => {
                         <span className="message-author">Richard Miles </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -433,9 +380,7 @@ const Setting = () => {
                         <span className="message-author">John Doe</span>
                         <span className="message-time">1 Aug</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -447,15 +392,10 @@ const Setting = () => {
                         <span className="avatar">T</span>
                       </div>
                       <div className="list-body">
-                        <span className="message-author">
-                          {" "}
-                          Tarah Shropshire{" "}
-                        </span>
+                        <span className="message-author"> Tarah Shropshire </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -470,9 +410,7 @@ const Setting = () => {
                         <span className="message-author">Mike Litorus</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -484,15 +422,10 @@ const Setting = () => {
                         <span className="avatar">C</span>
                       </div>
                       <div className="list-body">
-                        <span className="message-author">
-                          {" "}
-                          Catherine Manseau{" "}
-                        </span>
+                        <span className="message-author"> Catherine Manseau </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -504,15 +437,10 @@ const Setting = () => {
                         <span className="avatar">D</span>
                       </div>
                       <div className="list-body">
-                        <span className="message-author">
-                          {" "}
-                          Domenic Houston{" "}
-                        </span>
+                        <span className="message-author"> Domenic Houston </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -527,9 +455,7 @@ const Setting = () => {
                         <span className="message-author"> Buster Wigton </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -544,9 +470,7 @@ const Setting = () => {
                         <span className="message-author"> Rolland Webber </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -561,9 +485,7 @@ const Setting = () => {
                         <span className="message-author"> Claire Mapes </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -578,9 +500,7 @@ const Setting = () => {
                         <span className="message-author">Melita Faucher</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -595,9 +515,7 @@ const Setting = () => {
                         <span className="message-author">Jeffery Lalor</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -612,9 +530,7 @@ const Setting = () => {
                         <span className="message-author">Loren Gatlin</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -629,9 +545,7 @@ const Setting = () => {
                         <span className="message-author">Tarah Shropshire</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>

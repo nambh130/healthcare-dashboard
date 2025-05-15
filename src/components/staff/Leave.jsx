@@ -2,17 +2,17 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import { DatePicker} from "antd";
+import { DatePicker } from "antd";
 import { onShowSizeChange, itemRender } from "../Pagination";
-import {Table} from "antd";
-import { imagesend,pdficon,pdficon2,pdficon3,pdficon4,plusicon,refreshicon,searchnormal} from "../imagepath";
+import { Table } from "antd";
+import { imagesend, pdficon, pdficon2, pdficon3, pdficon4, plusicon, refreshicon, searchnormal } from "../imagepath";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Link } from "react-router-dom";
 import Select from "react-select";
-import { Dropdown} from 'react-bootstrap';
+import { Dropdown } from "react-bootstrap";
 
 const Leave = () => {
-  const [dropdownValue, setDropdownValue] = useState('');
+  const [dropdownValue, setDropdownValue] = useState("");
 
   const handleDropdownChange = (value) => {
     setDropdownValue(value);
@@ -46,7 +46,7 @@ const Leave = () => {
   };
   const datasource = [
     {
-      id:1,
+      id: 1,
       EmployeeName: "Andrea Lalema",
       LeaveType: "Medical Leave",
       From: "02.10.2022",
@@ -57,7 +57,7 @@ const Leave = () => {
       FIELD9: "",
     },
     {
-      id:2,
+      id: 2,
       EmployeeName: "Smith Bruklin",
       LeaveType: "Casual Leave",
       From: "04.10.2022",
@@ -68,7 +68,7 @@ const Leave = () => {
       FIELD9: "",
     },
     {
-      id:3,
+      id: 3,
       EmployeeName: "William Stephin",
       LeaveType: "Casual Leave",
       From: "02.10.2022",
@@ -79,7 +79,7 @@ const Leave = () => {
       FIELD9: "",
     },
     {
-      id:5,
+      id: 5,
       EmployeeName: "Cristina Groves",
       LeaveType: "Medical Leave",
       From: "02.10.2022",
@@ -90,7 +90,7 @@ const Leave = () => {
       FIELD9: "",
     },
     {
-      id:6,
+      id: 6,
       EmployeeName: "Mark Hay Smith",
       LeaveType: "Medical Leave",
       From: "02.10.2022",
@@ -101,7 +101,7 @@ const Leave = () => {
       FIELD9: "",
     },
     {
-      id:7,
+      id: 7,
       EmployeeName: "Andrea Lalema",
       LeaveType: "Medical Leave",
       From: "02.10.2022",
@@ -112,7 +112,7 @@ const Leave = () => {
       FIELD9: "",
     },
     {
-      id:8,
+      id: 8,
       EmployeeName: "Smith Bruklin",
       LeaveType: "Casual Leave",
       From: "02.10.2022",
@@ -157,8 +157,8 @@ const Leave = () => {
       sorter: (a, b) => a.Reason.length - b.Reason.length,
     },
     {
-      title: 'Status',
-      dataIndex: 'Status',
+      title: "Status",
+      dataIndex: "Status",
       // key: 'status',
       render: (text, record) => (
         <div>
@@ -166,13 +166,12 @@ const Leave = () => {
             {text === "Approved" && (
               <span className="custom1-badge status-green ">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -181,13 +180,12 @@ const Leave = () => {
             {text === "Pending" && (
               <span className="custom1-badge status-orange ">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -196,13 +194,12 @@ const Leave = () => {
             {text === "Declined" && (
               <span className="custom1-badge status-pink ">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -211,13 +208,12 @@ const Leave = () => {
             {text === "New" && (
               <span className="custom1-badge status-purple ">
                 {text}
-                <Dropdown.Toggle variant="">
-                </Dropdown.Toggle>
+                <Dropdown.Toggle variant=""></Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item eventKey="New">New</Dropdown.Item>
                   <Dropdown.Item eventKey="Pending">Pending</Dropdown.Item>
                   <Dropdown.Item eventKey="Approved">Approved</Dropdown.Item>
-                  <Dropdown.Item eventKey="Declined" >Declined</Dropdown.Item>
+                  <Dropdown.Item eventKey="Declined">Declined</Dropdown.Item>
                 </Dropdown.Menu>
               </span>
             )}
@@ -232,12 +228,7 @@ const Leave = () => {
         <>
           <div className="text-end">
             <div className="dropdown dropdown-action">
-              <Link
-                to="#"
-                className="action-icon dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="fas fa-ellipsis-v" />
               </Link>
               <div className="dropdown-menu dropdown-menu-end">
@@ -246,21 +237,21 @@ const Leave = () => {
                   Edit
                 </Link>
                 <Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_patient">
-                  <i className="fa fa-trash-alt m-r-5"></i> Delete</Link>
+                  <i className="fa fa-trash-alt m-r-5"></i> Delete
+                </Link>
               </div>
             </div>
           </div>
         </>
       ),
     },
-
   ];
 
   return (
     <>
       <div className="main-wrapper">
         <Header />
-        <Sidebar id='menu-item3' id1='menu-items3' activeClassName='leaves' />
+        <Sidebar id="menu-item3" id1="menu-items3" activeClassName="leaves" />
         <div className="page-wrapper">
           <div className="content">
             {/* Page Header */}
@@ -295,28 +286,18 @@ const Leave = () => {
                             <div className="doctor-search-blk">
                               <div className="top-nav-search table-search-blk">
                                 <form>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Search here"
-                                  />
+                                  <input type="text" className="form-control" placeholder="Search here" />
                                   <Link className="btn">
-                                    <img src={searchnormal} alt="#"/>
+                                    <img src={searchnormal} alt="#" />
                                   </Link>
                                 </form>
                               </div>
                               <div className="add-group">
-                                <Link
-                                  to="/add-leave"
-                                  className="btn btn-primary add-pluss ms-2"
-                                >
-                                  <img src={plusicon} alt="#"/>
+                                <Link to="/add-leave" className="btn btn-primary add-pluss ms-2">
+                                  <img src={plusicon} alt="#" />
                                 </Link>
-                                <Link
-                                  to="#"
-                                  className="btn btn-primary doctor-refresh ms-2"
-                                >
-                                  <img src={refreshicon} alt="#"/>
+                                <Link to="#" className="btn btn-primary doctor-refresh ms-2">
+                                  <img src={refreshicon} alt="#" />
                                 </Link>
                               </div>
                             </div>
@@ -324,16 +305,16 @@ const Leave = () => {
                         </div>
                         <div className="col-auto text-end float-end ms-auto download-grp">
                           <Link to="#" className=" me-2">
-                            <img src={pdficon} alt="#"/>
+                            <img src={pdficon} alt="#" />
                           </Link>
                           <Link to="#" className=" me-2">
-                            <img src={pdficon2} alt="#"/>
+                            <img src={pdficon2} alt="#" />
                           </Link>
                           <Link to="#" className=" me-2">
-                            <img src={pdficon3} alt="#"/>
+                            <img src={pdficon3} alt="#" />
                           </Link>
                           <Link to="#">
-                            <img src={pdficon4} alt="#"/>
+                            <img src={pdficon4} alt="#" />
                           </Link>
                         </div>
                       </div>
@@ -356,7 +337,7 @@ const Leave = () => {
                                 onChange={setSelectedOption}
                                 options={options}
                                 menuPortalTarget={document.body}
-                                styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                                styles={{ menuPortal: (base) => ({ ...base, zIndex: 9999 }) }}
                               />
                             </div>
                           </div>
@@ -366,9 +347,8 @@ const Leave = () => {
                               <Select
                                 defaultValue={selectedOption}
                                 onChange={setSelectedOption}
-                                options={leave}
                                 menuPortalTarget={document.body}
-                                styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
+                                styles={{ menuPortal: (base) => ({ ...base, zIndex: 9999 }) }}
                               />
                             </div>
                           </div>
@@ -394,10 +374,7 @@ const Leave = () => {
                           </div>
                           <div className="col-12 col-md-6 col-xl-4">
                             <div className="doctor-submit">
-                              <button
-                                type="submit"
-                                className="btn btn-primary submit-list-form me-2"
-                              >
+                              <button type="submit" className="btn btn-primary submit-list-form me-2">
                                 Search
                               </button>
                             </div>
@@ -409,8 +386,7 @@ const Leave = () => {
                       <Table
                         pagination={{
                           total: datasource.length,
-                          showTotal: (total, range) =>
-                            `Showing ${range[0]} to ${range[1]} of ${total} entries`,
+                          showTotal: (total, range) => `Showing ${range[0]} to ${range[1]} of ${total} entries`,
                           // showSizeChanger: true,
                           onShowSizeChange: onShowSizeChange,
                           itemRender: itemRender,
@@ -446,9 +422,7 @@ const Leave = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -463,9 +437,7 @@ const Leave = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -477,15 +449,10 @@ const Leave = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -500,9 +467,7 @@ const Leave = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -514,15 +479,10 @@ const Leave = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -534,15 +494,10 @@ const Leave = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -554,15 +509,10 @@ const Leave = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -574,15 +524,10 @@ const Leave = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -597,9 +542,7 @@ const Leave = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -614,9 +557,7 @@ const Leave = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -631,9 +572,7 @@ const Leave = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -648,9 +587,7 @@ const Leave = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -662,14 +599,10 @@ const Leave = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -682,15 +615,11 @@ const Leave = () => {
             </div>
           </div>
         </div>
-        <div
-          id="delete_patient"
-          className="modal fade delete-modal"
-          role="dialog"
-        >
+        <div id="delete_patient" className="modal fade delete-modal" role="dialog">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-body text-center">
-                <img src={imagesend} alt="#"width={50} height={46} />
+                <img src={imagesend} alt="#" width={50} height={46} />
                 <h3>Are you sure want to delete this ?</h3>
                 <div className="m-t-20">
                   {" "}

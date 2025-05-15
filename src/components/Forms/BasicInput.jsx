@@ -3,7 +3,7 @@ import Header from "../Header";
 import Sidebar from "../Sidebar";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Select from "react-select";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const BasicInput = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -18,7 +18,7 @@ const BasicInput = () => {
   return (
     <>
       <Header />
-      <Sidebar id='menu-item15' id1='menu-items15' activeClassName='basic-input'/>
+      <Sidebar id="menu-item15" id1="menu-items15" activeClassName="basic-input" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -47,76 +47,45 @@ const BasicInput = () => {
                   <h4 className="card-title">Basic Inputs</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Text Input
-                      </label>
+                      <label className="col-form-label col-md-2">Text Input</label>
                       <div className="col-md-10">
                         <input type="text" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Password
-                      </label>
+                      <label className="col-form-label col-md-2">Password</label>
                       <div className="col-md-10">
                         <input type="password" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Disabled Input
-                      </label>
+                      <label className="col-form-label col-md-2">Disabled Input</label>
                       <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control"
-                          disabled="disabled"
-                        />
+                        <input type="text" className="form-control" disabled="disabled" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Readonly Input
-                      </label>
+                      <label className="col-form-label col-md-2">Readonly Input</label>
                       <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control"
-                          defaultValue="readonly"
-                          readOnly="readonly"
-                        />
+                        <input type="text" className="form-control" defaultValue="readonly" readOnly="readonly" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Placeholder
-                      </label>
+                      <label className="col-form-label col-md-2">Placeholder</label>
                       <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Placeholder"
-                        />
+                        <input type="text" className="form-control" placeholder="Placeholder" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        File input
-                      </label>
+                      <label className="col-form-label col-md-2">File input</label>
                       <div className="col-md-10">
                         <input className="form-control" type="file" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Default select
-                      </label>
+                      <label className="col-form-label col-md-2">Default select</label>
                       <div className="col-md-10">
-                        <Select
-                          defaultValue={selectedOption}
-                          onChange={setSelectedOption}
-                          options={option}
-                        />
+                        <Select defaultValue={selectedOption} onChange={setSelectedOption} options={option} />
                       </div>
                     </div>
                     <div className="form-group row">
@@ -140,9 +109,7 @@ const BasicInput = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Checkbox
-                      </label>
+                      <label className="col-form-label col-md-2">Checkbox</label>
                       <div className="col-md-10">
                         <div className="checkbox">
                           <label>
@@ -162,9 +129,7 @@ const BasicInput = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Textarea
-                      </label>
+                      <label className="col-form-label col-md-2">Textarea</label>
                       <div className="col-md-10">
                         <textarea
                           rows={5}
@@ -176,9 +141,7 @@ const BasicInput = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Input Addons
-                      </label>
+                      <label className="col-form-label col-md-2">Input Addons</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -197,39 +160,21 @@ const BasicInput = () => {
                   <h4 className="card-title">Input Sizes</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Large Input
-                      </label>
+                      <label className="col-form-label col-md-2">Large Input</label>
                       <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control form-control-lg"
-                          placeholder=".form-control-lg"
-                        />
+                        <input type="text" className="form-control form-control-lg" placeholder=".form-control-lg" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Default Input
-                      </label>
+                      <label className="col-form-label col-md-2">Default Input</label>
                       <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder=".form-control"
-                        />
+                        <input type="text" className="form-control" placeholder=".form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-md-2">
-                        Small Input
-                      </label>
+                      <label className="col-form-label col-md-2">Small Input</label>
                       <div className="col-md-10">
-                        <input
-                          type="text"
-                          className="form-control form-control-sm"
-                          placeholder=".form-control-sm"
-                        />
+                        <input type="text" className="form-control form-control-sm" placeholder=".form-control-sm" />
                       </div>
                     </div>
                   </form>
@@ -254,9 +199,7 @@ const BasicInput = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -271,9 +214,7 @@ const BasicInput = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -285,15 +226,10 @@ const BasicInput = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -308,9 +244,7 @@ const BasicInput = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -322,15 +256,10 @@ const BasicInput = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -342,15 +271,10 @@ const BasicInput = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -362,15 +286,10 @@ const BasicInput = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -382,15 +301,10 @@ const BasicInput = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -405,9 +319,7 @@ const BasicInput = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -422,9 +334,7 @@ const BasicInput = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -439,9 +349,7 @@ const BasicInput = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -456,9 +364,7 @@ const BasicInput = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -470,14 +376,10 @@ const BasicInput = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>

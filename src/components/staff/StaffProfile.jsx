@@ -1,21 +1,25 @@
-import React from 'react'
-import Sidebar from '../Sidebar';
-import Header from '../Header';
+import React from "react";
+import Sidebar from "../Sidebar";
+import Header from "../Header";
 import {
-  cameraicon, doctor, imagesend, medalicon, medalicon02, medalicon03,
-  menuicon16, profilebg, profileuser02
-} from '../imagepath';
+  cameraicon,
+  doctor,
+  imagesend,
+  medalicon,
+  medalicon02,
+  medalicon03,
+  menuicon16,
+  profilebg,
+  profileuser02,
+} from "../imagepath";
 import FeatherIcon from "feather-icons-react";
-import { Link } from 'react-router-dom';
-
-
-
+import { Link } from "react-router-dom";
 
 const StaffProfile = () => {
   return (
     <div>
       <Header />
-      <Sidebar id='menu-item3' id1='menu-items3' activeClassName='staff-profile' />
+      <Sidebar id="menu-item3" id1="menu-items3" activeClassName="staff-profile" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -28,7 +32,7 @@ const StaffProfile = () => {
                       <Link to="#">Staffs </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <i className="feather-chevron-right" >
+                      <i className="feather-chevron-right">
                         <FeatherIcon icon="chevron-right"></FeatherIcon>
                       </i>
                     </li>
@@ -64,17 +68,11 @@ const StaffProfile = () => {
                             <div className="col-lg-4 col-md-4">
                               <div className="profile-user-box">
                                 <div className="profile-user-img">
-                                  <img
-                                    src={profileuser02}
-                                    alt="Profile"
-                                  />
+                                  <img src={profileuser02} alt="Profile" />
                                   <div className="form-group doctor-up-files profile-edit-icon mb-0">
                                     <div className="uplod d-flex">
                                       <label className="file-upload profile-upbtn mb-0">
-                                        <img
-                                          src={cameraicon}
-                                          alt="Profile"
-                                        />
+                                        <img src={cameraicon} alt="Profile" />
                                         <input type="file" />
                                       </label>
                                     </div>
@@ -104,16 +102,10 @@ const StaffProfile = () => {
                             </div>
                             <div className="col-lg-4 col-md-4 d-flex align-items-center">
                               <div className="follow-btn-group">
-                                <button
-                                  type="submit"
-                                  className="btn btn-info follow-btns"
-                                >
+                                <button type="submit" className="btn btn-info follow-btns">
                                   Follow
                                 </button>
-                                <button
-                                  type="submit"
-                                  className="btn btn-info message-btns"
-                                >
+                                <button type="submit" className="btn btn-info message-btns">
                                   Message
                                 </button>
                               </div>
@@ -132,9 +124,8 @@ const StaffProfile = () => {
                           <div className="heading-detail ">
                             <h4 className="mb-3">About me</h4>
                             <p>
-                              Hello I am Cristina Groves a Gynaecologist in Sanjivni
-                              Hospital Surat. I love to work with all my hospital
-                              staff and seniour doctors.
+                              Hello I am Cristina Groves a Gynaecologist in Sanjivni Hospital Surat. I love to work with
+                              all my hospital staff and seniour doctors.
                             </p>
                           </div>
                           <div className="about-me-list">
@@ -277,10 +268,7 @@ const StaffProfile = () => {
                               <li>
                                 <Link to="#" className="active">
                                   <span className="set-about-icon me-2">
-                                    <img
-                                      src={doctor}
-                                      alt=""
-                                    />
+                                    <img src={doctor} alt="" />
                                   </span>
                                   About me
                                 </Link>
@@ -288,10 +276,7 @@ const StaffProfile = () => {
                               <li>
                                 <Link to="/staff-settings">
                                   <span className="set-about-icon me-2">
-                                    <img
-                                      src={menuicon16}
-                                      alt=""
-                                    />
+                                    <img src={menuicon16} alt="" />
                                   </span>
                                   Settings
                                 </Link>
@@ -328,16 +313,14 @@ const StaffProfile = () => {
                           </div>
                           <div className="hello-park">
                             <p>
-                              Completed my graduation in Gynaecologist Medicine from
-                              the well known and renowned institution of India –
-                              SARDAR PATEL MEDICAL COLLEGE, BARODA in 2000-01, which
-                              was affiliated to M.S. University. I ranker in
-                              University exams from the same university from 1996-01.
+                              Completed my graduation in Gynaecologist Medicine from the well known and renowned
+                              institution of India – SARDAR PATEL MEDICAL COLLEGE, BARODA in 2000-01, which was
+                              affiliated to M.S. University. I ranker in University exams from the same university from
+                              1996-01.
                             </p>
                             <p>
-                              Worked as Professor and Head of the department ;
-                              Community medicine Department at Sterline Hospital,
-                              Rajkot, Gujarat from 2003-2015
+                              Worked as Professor and Head of the department ; Community medicine Department at Sterline
+                              Hospital, Rajkot, Gujarat from 2003-2015
                             </p>
                           </div>
                           <div className="hello-park mb-2">
@@ -358,9 +341,7 @@ const StaffProfile = () => {
                                     <td>M.D. of Medicine</td>
                                     <td>University of Wyoming </td>
                                     <td>
-                                      <button className="custom-badge status-green ">
-                                        Distinction
-                                      </button>
+                                      <button className="custom-badge status-green ">Distinction</button>
                                     </td>
                                   </tr>
                                   <tr>
@@ -368,9 +349,7 @@ const StaffProfile = () => {
                                     <td>MBBS</td>
                                     <td>Netherland Medical College </td>
                                     <td>
-                                      <button className="custom-badge status-green ">
-                                        Distinction
-                                      </button>
+                                      <button className="custom-badge status-green ">Distinction</button>
                                     </td>
                                   </tr>
                                 </tbody>
@@ -395,9 +374,7 @@ const StaffProfile = () => {
                                     <td>Senior doctor </td>
                                     <td>Midtown Medical Clinic </td>
                                     <td>
-                                      <button className="custom-badge status-orange ">
-                                        Good
-                                      </button>
+                                      <button className="custom-badge status-orange ">Good</button>
                                     </td>
                                   </tr>
                                   <tr>
@@ -405,9 +382,7 @@ const StaffProfile = () => {
                                     <td>Associate Prof. </td>
                                     <td>Netherland Medical College </td>
                                     <td>
-                                      <button className="custom-badge status-green ">
-                                        Excellence
-                                      </button>
+                                      <button className="custom-badge status-green ">Excellence</button>
                                     </td>
                                   </tr>
                                 </tbody>
@@ -417,25 +392,21 @@ const StaffProfile = () => {
                           <div className="hello-park">
                             <h5>Conferences, Cources &amp; Workshop Attended</h5>
                             <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                              sed do eiusmod tempor incididunt ut labore et dolore
-                              magna aliqua.
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                              ut labore et dolore magna aliqua.
                             </p>
                             <p>
-                              Excepteur sint occaecat cupidatat non proident, sunt in
-                              culpa qui officia deserunt mollit anim id est laborum.
+                              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                              anim id est laborum.
                             </p>
                             <p>
-                              Sed ut perspiciatis unde omnis iste natus error sit
-                              voluptatem accusantium doloremque laudantium, totam rem
-                              aperiam
+                              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                              laudantium, totam rem aperiam
                             </p>
                             <p className="mb-0">
-                              Ut enim ad minima veniam, quis nostrum exercitationem
-                              ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                              ea commodi consequatur? Quis autem vel eum iure
-                              reprehenderit qui in ea voluptate velit esse quam nihil
-                              molestiae consequatur
+                              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                              nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
+                              voluptate velit esse quam nihil molestiae consequatur
                             </p>
                           </div>
                         </div>
@@ -463,9 +434,7 @@ const StaffProfile = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -480,9 +449,7 @@ const StaffProfile = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -497,9 +464,7 @@ const StaffProfile = () => {
                           <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -514,9 +479,7 @@ const StaffProfile = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -531,9 +494,7 @@ const StaffProfile = () => {
                           <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -548,9 +509,7 @@ const StaffProfile = () => {
                           <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -565,9 +524,7 @@ const StaffProfile = () => {
                           <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -582,9 +539,7 @@ const StaffProfile = () => {
                           <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -599,9 +554,7 @@ const StaffProfile = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -616,9 +569,7 @@ const StaffProfile = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -633,9 +584,7 @@ const StaffProfile = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -650,9 +599,7 @@ const StaffProfile = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -667,9 +614,7 @@ const StaffProfile = () => {
                           <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -703,7 +648,7 @@ const StaffProfile = () => {
         </div>
       </>
     </div>
-  )
-}
+  );
+};
 
 export default StaffProfile;

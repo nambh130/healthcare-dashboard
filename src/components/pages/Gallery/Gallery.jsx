@@ -7,22 +7,8 @@ import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Blog1, Blog2, Blog3, Blog4 } from "../../imagepath";
 
 const GalleryImage = () => {
-  const images = [
-    Blog1,
-    Blog2,
-    Blog3,
-    Blog4,
-    Blog1,
-    Blog2,
-    Blog3,
-    Blog4,
-    Blog1,
-    Blog2,
-    Blog3,
-    Blog4,
-  ];
+  const images = [Blog1, Blog2, Blog3, Blog4, Blog1, Blog2, Blog3, Blog4, Blog1, Blog2, Blog3, Blog4];
 
- 
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,28 +24,20 @@ const GalleryImage = () => {
 
   return (
     <>
-   {isOpen && (
+      {isOpen && (
         <Lightbox
           mainSrc={images[photoIndex]}
           nextSrc={images[(photoIndex + 1) % images.length]}
           prevSrc={images[(photoIndex + images.length - 1) % images.length]}
           onCloseRequest={closeLightbox}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
+          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
         />
       )}
       {!isOpen && (
         <>
           <Header />
-          <Sidebar
-            id="menu-item17"
-            id1="menu-items17"
-            activeClassName="gallery"
-          />
+          <Sidebar id="menu-item17" id1="menu-items17" activeClassName="gallery" />
           <div className="page-wrapper">
             <div className="content">
               {/* Page Header */}
@@ -83,7 +61,7 @@ const GalleryImage = () => {
               {/* /Page Header */}
 
               <div id="lightgallery" className="row">
-              <div>
+                <div>
                   {images.map((image, index) => (
                     <img
                       key={index}
@@ -108,5 +86,4 @@ const GalleryImage = () => {
   );
 };
 
-export default  GalleryImage;
-
+export default GalleryImage;

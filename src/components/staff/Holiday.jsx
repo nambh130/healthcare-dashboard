@@ -2,18 +2,9 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import {Table} from "antd";
+import { Table } from "antd";
 import { onShowSizeChange, itemRender } from "../Pagination";
-import {
-  imagesend,
-  pdficon,
-  pdficon3,
-  pdficon2,
-  pdficon4,
-  plusicon,
-  refreshicon,
-  searchnormal,
-} from "../imagepath";
+import { imagesend, pdficon, pdficon3, pdficon2, pdficon4, plusicon, refreshicon, searchnormal } from "../imagepath";
 import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 
@@ -30,7 +21,7 @@ const Holiday = () => {
   };
   const datasource = [
     {
-      id:1,
+      id: 1,
       FIELD1: "",
       Title: "New Year",
       HolidayDate: "01-01-2022",
@@ -39,7 +30,7 @@ const Holiday = () => {
       FIELD6: "",
     },
     {
-      id:2,
+      id: 2,
       FIELD1: "",
       Title: "Pongal",
       HolidayDate: "14-01-2022",
@@ -66,7 +57,7 @@ const Holiday = () => {
       FIELD6: "",
     },
     {
-      id:5,
+      id: 5,
       FIELD1: "",
       Title: "Good Friday",
       HolidayDate: "05-01-2022",
@@ -75,7 +66,7 @@ const Holiday = () => {
       FIELD6: "",
     },
     {
-      id:6,
+      id: 6,
       FIELD1: "",
       Title: "May Day",
       HolidayDate: "15-01-2022",
@@ -84,7 +75,7 @@ const Holiday = () => {
       FIELD6: "",
     },
     {
-      id:7,
+      id: 7,
       FIELD1: "",
       Title: "Ramzan",
       HolidayDate: "10-08-2022",
@@ -93,7 +84,7 @@ const Holiday = () => {
       FIELD6: "",
     },
     {
-      id:8,
+      id: 8,
       FIELD1: "",
       Title: "Independence day",
       HolidayDate: "26-01-2022",
@@ -131,12 +122,7 @@ const Holiday = () => {
         <>
           <div className="text-end">
             <div className="dropdown dropdown-action">
-              <Link
-                to="#"
-                className="action-icon dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 <i className="fas fa-ellipsis-v" />
               </Link>
               <div className="dropdown-menu dropdown-menu-end">
@@ -145,7 +131,8 @@ const Holiday = () => {
                   Edit
                 </Link>
                 <Link className="dropdown-item" to="#" data-bs-toggle="modal" data-bs-target="#delete_patient">
-                   <i className="fa fa-trash-alt m-r-5"></i> Delete</Link>
+                  <i className="fa fa-trash-alt m-r-5"></i> Delete
+                </Link>
               </div>
             </div>
           </div>
@@ -166,13 +153,13 @@ const Holiday = () => {
               <div className="col-sm-12">
                 <ul className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <Link to="/stafflist">Staffs </Link>
+                    <Link to="/staff-list">Staffs </Link>
                   </li>
                   <li className="breadcrumb-item">
-                  <i className="feather-chevron-right">
-                    <FeatherIcon icon="chevron-right" />
-                  </i>
-                </li>
+                    <i className="feather-chevron-right">
+                      <FeatherIcon icon="chevron-right" />
+                    </i>
+                  </li>
                   <li className="breadcrumb-item active">Holidays</li>
                 </ul>
               </div>
@@ -192,27 +179,17 @@ const Holiday = () => {
                           <div className="doctor-search-blk">
                             <div className="top-nav-search table-search-blk">
                               <form>
-                                <input
-                                  type="text"
-                                  className="form-control"
-                                  placeholder="Search here"
-                                />
+                                <input type="text" className="form-control" placeholder="Search here" />
                                 <Link className="btn">
                                   <img src={searchnormal} alt="#" />
                                 </Link>
                               </form>
                             </div>
                             <div className="add-group">
-                              <Link
-                                to="#"
-                                className="btn btn-primary add-pluss ms-2"
-                              >
+                              <Link to="#" className="btn btn-primary add-pluss ms-2">
                                 <img src={plusicon} alt="#" />
                               </Link>
-                              <Link
-                                to="#"
-                                className="btn btn-primary doctor-refresh ms-2"
-                              >
+                              <Link to="#" className="btn btn-primary doctor-refresh ms-2">
                                 <img src={refreshicon} alt="#" />
                               </Link>
                             </div>
@@ -240,8 +217,7 @@ const Holiday = () => {
                     <Table
                       pagination={{
                         total: datasource.length,
-                        showTotal: (total, range) =>
-                          `Showing ${range[0]} to ${range[1]} of ${total} entries`,
+                        showTotal: (total, range) => `Showing ${range[0]} to ${range[1]} of ${total} entries`,
                         // showSizeChanger: true,
                         onShowSizeChange: onShowSizeChange,
                         itemRender: itemRender,
@@ -624,9 +600,7 @@ const Holiday = () => {
                         <span className="message-author">Richard Miles </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -641,9 +615,7 @@ const Holiday = () => {
                         <span className="message-author">John Doe</span>
                         <span className="message-time">1 Aug</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -655,15 +627,10 @@ const Holiday = () => {
                         <span className="avatar">T</span>
                       </div>
                       <div className="list-body">
-                        <span className="message-author">
-                          {" "}
-                          Tarah Shropshire{" "}
-                        </span>
+                        <span className="message-author"> Tarah Shropshire </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -678,9 +645,7 @@ const Holiday = () => {
                         <span className="message-author">Mike Litorus</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -692,15 +657,10 @@ const Holiday = () => {
                         <span className="avatar">C</span>
                       </div>
                       <div className="list-body">
-                        <span className="message-author">
-                          {" "}
-                          Catherine Manseau{" "}
-                        </span>
+                        <span className="message-author"> Catherine Manseau </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -712,15 +672,10 @@ const Holiday = () => {
                         <span className="avatar">D</span>
                       </div>
                       <div className="list-body">
-                        <span className="message-author">
-                          {" "}
-                          Domenic Houston{" "}
-                        </span>
+                        <span className="message-author"> Domenic Houston </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -735,9 +690,7 @@ const Holiday = () => {
                         <span className="message-author"> Buster Wigton </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -752,9 +705,7 @@ const Holiday = () => {
                         <span className="message-author"> Rolland Webber </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -769,9 +720,7 @@ const Holiday = () => {
                         <span className="message-author"> Claire Mapes </span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -786,9 +735,7 @@ const Holiday = () => {
                         <span className="message-author">Melita Faucher</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -803,9 +750,7 @@ const Holiday = () => {
                         <span className="message-author">Jeffery Lalor</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -820,9 +765,7 @@ const Holiday = () => {
                         <span className="message-author">Loren Gatlin</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -837,9 +780,7 @@ const Holiday = () => {
                         <span className="message-author">Tarah Shropshire</span>
                         <span className="message-time">12:28 AM</span>
                         <div className="clearfix" />
-                        <span className="message-content">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                        </span>
+                        <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                       </div>
                     </div>
                   </Link>
@@ -852,11 +793,7 @@ const Holiday = () => {
           </div>
         </div>
       </div>
-      <div
-        id="delete_patient"
-        className="modal fade delete-modal"
-        role="dialog"
-      >
+      <div id="delete_patient" className="modal fade delete-modal" role="dialog">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-body text-center">
@@ -874,7 +811,6 @@ const Holiday = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   );

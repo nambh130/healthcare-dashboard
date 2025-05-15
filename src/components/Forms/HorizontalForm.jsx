@@ -2,33 +2,34 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import Select from 'react-select';
+import Select from "react-select";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Link } from "react-router-dom";
+
 const HorizontalForm = () => {
-    const [selectedOption, setSelectedOption] = useState(null);
-    const [bloodGroup, setBloodGroup] = useState([
-      { value: 2, label: "A +" },
-      { value: 3, label: "O +" },
-      { value: 4, label: "B +" },
-      { value: 5, label: "AB +" },
-    ]);
-    const [state, setState] = useState([
-        { value: 2, label: "California" },
-        { value: 3, label: "Texas" },
-        { value: 4, label: "Florida" },
-      ]);
-      const [country, setCountry] = useState([
-        { value: 2, label: "USA" },
-        { value: 3, label: "India" },
-        { value: 4, label: "French" },
-        { value: 4, label: "Spain" },
-      ]);
-    
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [bloodGroup, setBloodGroup] = useState([
+    { value: 2, label: "A +" },
+    { value: 3, label: "O +" },
+    { value: 4, label: "B +" },
+    { value: 5, label: "AB +" },
+  ]);
+  const [state, setState] = useState([
+    { value: 2, label: "California" },
+    { value: 3, label: "Texas" },
+    { value: 4, label: "Florida" },
+  ]);
+  const [country, setCountry] = useState([
+    { value: 2, label: "USA" },
+    { value: 3, label: "India" },
+    { value: 4, label: "French" },
+    { value: 4, label: "Spain" },
+  ]);
+
   return (
     <>
       <Header />
-      <Sidebar id='menu-item15' id1='menu-items15' activeClassName='horizontal-form'/>
+      <Sidebar id="menu-item15" id1="menu-items15" activeClassName="horizontal-form" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -42,8 +43,8 @@ const HorizontalForm = () => {
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
-                        <FeatherIcon icon="chevron-right"/>
-                        </i>
+                        <FeatherIcon icon="chevron-right" />
+                      </i>
                     </li>
                     <li className="breadcrumb-item active">Horizontal Form</li>
                   </ul>
@@ -57,49 +58,37 @@ const HorizontalForm = () => {
                   <h4 className="card-title">Basic Form</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        First Name
-                      </label>
+                      <label className="col-md-3 col-form-label">First Name</label>
                       <div className="col-md-9">
                         <input type="text" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Last Name
-                      </label>
+                      <label className="col-md-3 col-form-label">Last Name</label>
                       <div className="col-md-9">
                         <input type="text" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Email Address
-                      </label>
+                      <label className="col-md-3 col-form-label">Email Address</label>
                       <div className="col-md-9">
                         <input type="email" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Username
-                      </label>
+                      <label className="col-md-3 col-form-label">Username</label>
                       <div className="col-md-9">
                         <input type="text" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Password
-                      </label>
+                      <label className="col-md-3 col-form-label">Password</label>
                       <div className="col-md-9">
                         <input type="password" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Repeat Password
-                      </label>
+                      <label className="col-md-3 col-form-label">Repeat Password</label>
                       <div className="col-md-9">
                         <input type="password" className="form-control" />
                       </div>
@@ -117,17 +106,13 @@ const HorizontalForm = () => {
                   <h4 className="card-title">Address Form</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Address Line 1
-                      </label>
+                      <label className="col-md-3 col-form-label">Address Line 1</label>
                       <div className="col-md-9">
                         <input type="text" className="form-control" />
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Address Line 2
-                      </label>
+                      <label className="col-md-3 col-form-label">Address Line 2</label>
                       <div className="col-md-9">
                         <input type="text" className="form-control" />
                       </div>
@@ -151,9 +136,7 @@ const HorizontalForm = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-md-3 col-form-label">
-                        Postal Code
-                      </label>
+                      <label className="col-md-3 col-form-label">Postal Code</label>
                       <div className="col-md-9">
                         <input type="text" className="form-control" />
                       </div>
@@ -176,25 +159,19 @@ const HorizontalForm = () => {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            First Name
-                          </label>
+                          <label className="col-md-3 col-form-label">First Name</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Last Name
-                          </label>
+                          <label className="col-md-3 col-form-label">Last Name</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Gender
-                          </label>
+                          <label className="col-md-3 col-form-label">Gender</label>
                           <div className="col-md-9">
                             <div className="form-check form-check-inline">
                               <input
@@ -205,10 +182,7 @@ const HorizontalForm = () => {
                                 defaultValue="option1"
                                 defaultChecked=""
                               />
-                              <label
-                                className="form-check-label"
-                                htmlFor="gender_male"
-                              >
+                              <label className="form-check-label" htmlFor="gender_male">
                                 Male
                               </label>
                             </div>
@@ -220,25 +194,16 @@ const HorizontalForm = () => {
                                 id="gender_female"
                                 defaultValue="option2"
                               />
-                              <label
-                                className="form-check-label"
-                                htmlFor="gender_female"
-                              >
+                              <label className="form-check-label" htmlFor="gender_female">
                                 Female
                               </label>
                             </div>
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Blood Group
-                          </label>
+                          <label className="col-md-3 col-form-label">Blood Group</label>
                           <div className="col-md-9">
-                          <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={bloodGroup}
-                            />
+                            <Select defaultValue={selectedOption} onChange={setSelectedOption} options={bloodGroup} />
                             {/* <select className="select">
                               <option>Select</option>
                               <option value={1}>A+</option>
@@ -251,33 +216,25 @@ const HorizontalForm = () => {
                       </div>
                       <div className="col-md-6">
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Username
-                          </label>
+                          <label className="col-md-3 col-form-label">Username</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Email
-                          </label>
+                          <label className="col-md-3 col-form-label">Email</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Password
-                          </label>
+                          <label className="col-md-3 col-form-label">Password</label>
                           <div className="col-md-9">
                             <input type="password" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Repeat Password
-                          </label>
+                          <label className="col-md-3 col-form-label">Repeat Password</label>
                           <div className="col-md-9">
                             <input type="password" className="form-control" />
                           </div>
@@ -288,25 +245,19 @@ const HorizontalForm = () => {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Address Line 1
-                          </label>
+                          <label className="col-md-3 col-form-label">Address Line 1</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Address Line 2
-                          </label>
+                          <label className="col-md-3 col-form-label">Address Line 2</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            State
-                          </label>
+                          <label className="col-md-3 col-form-label">State</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
@@ -314,25 +265,19 @@ const HorizontalForm = () => {
                       </div>
                       <div className="col-md-6">
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            City
-                          </label>
+                          <label className="col-md-3 col-form-label">City</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Country
-                          </label>
+                          <label className="col-md-3 col-form-label">Country</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-md-3 col-form-label">
-                            Postal Code
-                          </label>
+                          <label className="col-md-3 col-form-label">Postal Code</label>
                           <div className="col-md-9">
                             <input type="text" className="form-control" />
                           </div>
@@ -356,31 +301,21 @@ const HorizontalForm = () => {
                       <div className="col-md-6">
                         <h4 className="card-title">Personal Details</h4>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            Name:
-                          </label>
+                          <label className="col-lg-3 col-form-label">Name:</label>
                           <div className="col-lg-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            Password:
-                          </label>
+                          <label className="col-lg-3 col-form-label">Password:</label>
                           <div className="col-lg-9">
                             <input type="password" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            State:
-                          </label>
+                          <label className="col-lg-3 col-form-label">State:</label>
                           <div className="col-lg-9">
-                          <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={state}
-                            />
+                            <Select defaultValue={selectedOption} onChange={setSelectedOption} options={state} />
                             {/* <select className="select">
                               <option>Select State</option>
                               <option value={1}>California</option>
@@ -390,9 +325,7 @@ const HorizontalForm = () => {
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            About:
-                          </label>
+                          <label className="col-lg-3 col-form-label">About:</label>
                           <div className="col-lg-9">
                             <textarea
                               rows={5}
@@ -407,61 +340,42 @@ const HorizontalForm = () => {
                       <div className="col-md-6">
                         <h4 className="card-title">Personal details</h4>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            Name:
-                          </label>
+                          <label className="col-lg-3 col-form-label">Name:</label>
                           <div className="col-lg-9">
                             <div className="row">
                               <div className="col-md-6">
-                                <input
-                                  type="text"
-                                  placeholder="First name"
-                                  className="form-control"
-                                />
+                                <input type="text" placeholder="First name" className="form-control" />
                               </div>
                               <div className="col-md-6">
-                                <input
-                                  type="text"
-                                  placeholder="Last name"
-                                  className="form-control"
-                                />
+                                <input type="text" placeholder="Last name" className="form-control" />
                               </div>
                             </div>
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            Email:
-                          </label>
+                          <label className="col-lg-3 col-form-label">Email:</label>
                           <div className="col-lg-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            Phone:
-                          </label>
+                          <label className="col-lg-3 col-form-label">Phone:</label>
                           <div className="col-lg-9">
                             <input type="text" className="form-control" />
                           </div>
                         </div>
                         <div className="form-group row">
-                          <label className="col-lg-3 col-form-label">
-                            Address:
-                          </label>
+                          <label className="col-lg-3 col-form-label">Address:</label>
                           <div className="col-lg-9">
-                            <input
-                              type="text"
-                              className="form-control m-b-20"
-                            />
+                            <input type="text" className="form-control m-b-20" />
                             <div className="row">
                               <div className="col-md-6">
                                 <div className=" m-b-20">
-                                <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={country}
-                            />
+                                  <Select
+                                    defaultValue={selectedOption}
+                                    onChange={setSelectedOption}
+                                    options={country}
+                                  />
                                   {/* <select className="select">
                                     <option>Select Country</option>
                                     <option value={1}>USA</option>
@@ -470,23 +384,11 @@ const HorizontalForm = () => {
                                     <option value={4}>Spain</option>
                                   </select> */}
                                 </div>
-                                <input
-                                  type="text"
-                                  placeholder="ZIP code"
-                                  className="form-control"
-                                />
+                                <input type="text" placeholder="ZIP code" className="form-control" />
                               </div>
                               <div className="col-md-6">
-                                <input
-                                  type="text"
-                                  placeholder="State/Province"
-                                  className="form-control m-b-20"
-                                />
-                                <input
-                                  type="text"
-                                  placeholder="City"
-                                  className="form-control"
-                                />
+                                <input type="text" placeholder="State/Province" className="form-control m-b-20" />
+                                <input type="text" placeholder="City" className="form-control" />
                               </div>
                             </div>
                           </div>
@@ -520,9 +422,7 @@ const HorizontalForm = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -537,9 +437,7 @@ const HorizontalForm = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -551,15 +449,10 @@ const HorizontalForm = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -574,9 +467,7 @@ const HorizontalForm = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -588,15 +479,10 @@ const HorizontalForm = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -608,15 +494,10 @@ const HorizontalForm = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -628,15 +509,10 @@ const HorizontalForm = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -648,15 +524,10 @@ const HorizontalForm = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -671,9 +542,7 @@ const HorizontalForm = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -688,9 +557,7 @@ const HorizontalForm = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -705,9 +572,7 @@ const HorizontalForm = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -722,9 +587,7 @@ const HorizontalForm = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -736,14 +599,10 @@ const HorizontalForm = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>

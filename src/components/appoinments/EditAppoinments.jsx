@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
 import { favicon, imagesend } from "../imagepath";
-import { DatePicker} from "antd";
+import { DatePicker } from "antd";
 import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 // import { TextField } from "@mui/material";
-import { TimePicker } from 'antd';
+import { TimePicker } from "antd";
 
 const EditAppoinments = () => {
   const [startTime, setStartTime] = useState();
@@ -40,11 +40,7 @@ const EditAppoinments = () => {
   return (
     <div>
       <Header />
-      <Sidebar
-        id="menu-item4"
-        id1="menu-items4"
-        activeClassName="edit-appoinment"
-      />
+      <Sidebar id="menu-item4" id1="menu-items4" activeClassName="edit-appoinment" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -83,11 +79,7 @@ const EditAppoinments = () => {
                             <label>
                               First Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Stephen"
-                            />
+                            <input className="form-control" type="text" defaultValue="Stephen" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -95,11 +87,7 @@ const EditAppoinments = () => {
                             <label>
                               Last Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Bruklin"
-                            />
+                            <input className="form-control" type="text" defaultValue="Bruklin" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -109,22 +97,13 @@ const EditAppoinments = () => {
                             </label>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                  defaultChecked=""
-                                />
+                                <input type="radio" name="gender" className="form-check-input" defaultChecked="" />
                                 Male
                               </label>
                             </div>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" />
                                 Female
                               </label>
                             </div>
@@ -135,11 +114,7 @@ const EditAppoinments = () => {
                             <label>
                               Mobile <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="+1 23 456890"
-                            />
+                            <input className="form-control" type="text" defaultValue="+1 23 456890" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -147,11 +122,7 @@ const EditAppoinments = () => {
                             <label>
                               Email <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="email"
-                              defaultValue="stephen@gmail.com"
-                            />
+                            <input className="form-control" type="email" defaultValue="stephen@gmail.com" />
                           </div>
                         </div>
                         <div className="col-12 col-sm-12">
@@ -163,9 +134,7 @@ const EditAppoinments = () => {
                               className="form-control"
                               rows={3}
                               cols={30}
-                              defaultValue={
-                                "101, Elanxa Apartments, 340 N Madison Avenue"
-                              }
+                              defaultValue={"101, Elanxa Apartments, 340 N Madison Avenue"}
                             />
                           </div>
                         </div>
@@ -177,14 +146,9 @@ const EditAppoinments = () => {
                         <div className="col-12 col-md-6 col-xl-4">
                           <div className="form-group local-forms cal-icon">
                             <label>
-                              Date of Appointment{" "}
-                              <span className="login-danger">*</span>
+                              Date of Appointment <span className="login-danger">*</span>
                             </label>
-                            <DatePicker
-                              className="form-control datetimepicker"
-                              onChange={onChange}
-                              suffixIcon={null}
-                            />
+                            <DatePicker className="form-control datetimepicker" onChange={onChange} suffixIcon={null} />
                             {/* <input
                         className="form-control datetimepicker"
                         type="text"
@@ -197,8 +161,12 @@ const EditAppoinments = () => {
                             <label>
                               From <span className="login-danger">*</span>
                             </label>
-                            <TimePicker value={value} onChange={onChange1} className="form-control"
-                                id="outlined-controlled"/>
+                            <TimePicker
+                              value={value}
+                              onChange={onChange1}
+                              className="form-control"
+                              id="outlined-controlled"
+                            />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -206,8 +174,12 @@ const EditAppoinments = () => {
                             <label>
                               To <span className="login-danger">*</span>
                             </label>
-                            <TimePicker value={value2} onChange={onChange2} className="form-control"
-                                id="outlined-controlled"/>
+                            <TimePicker
+                              value={value2}
+                              onChange={onChange2}
+                              className="form-control"
+                              id="outlined-controlled"
+                            />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -220,30 +192,29 @@ const EditAppoinments = () => {
                               menuPortalTarget={document.body}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
-                                menuPortal: base => ({ ...base, zIndex: 9999 }),
+                                menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1);",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
-
                             />
                             {/* <select className="form-control select">
                         <option>Select Doctor</option>
@@ -256,11 +227,7 @@ const EditAppoinments = () => {
                         <div className="col-12 col-md-6 col-xl-6">
                           <div className="form-group local-forms">
                             <label>Treatment </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              defaultValue="Blood Pressure"
-                            />
+                            <input className="form-control" type="text" defaultValue="Blood Pressure" />
                           </div>
                         </div>
                         <div className="col-12 col-sm-12">
@@ -292,20 +259,14 @@ const EditAppoinments = () => {
                                 onChange={loadFile}
                                 className="hide-input"
                               />
-                                 <label htmlFor="file" className="upload">
+                              <label htmlFor="file" className="upload">
                                 Choose File
                               </label>
                             </div>
-                            <div
-                              className="upload-images upload-sizee"
-                              style={{ display: show ? "none" : "block" }}
-                            >
+                            <div className="upload-images upload-sizee" style={{ display: show ? "none" : "block" }}>
                               <img src={favicon} alt="Image" />
                               <Link to="#" className="btn-icon logo-hide-btn">
-                                <i
-                                  className="feather-x-circle"
-                                  onClick={() => setShow((s) => !s)}
-                                >
+                                <i className="feather-x-circle" onClick={() => setShow((s) => !s)}>
                                   <FeatherIcon icon="x-circle" />
                                 </i>
                               </Link>
@@ -314,16 +275,10 @@ const EditAppoinments = () => {
                         </div>
                         <div className="col-12">
                           <div className="doctor-submit text-end">
-                            <button
-                              type="submit"
-                              className="btn btn-primary submit-form me-2"
-                            >
+                            <button type="submit" className="btn btn-primary submit-form me-2">
                               Submit
                             </button>
-                            <button
-                              type="submit"
-                              className="btn btn-primary cancel-form"
-                            >
+                            <button type="submit" className="btn btn-primary cancel-form">
                               Cancel
                             </button>
                           </div>
@@ -352,9 +307,7 @@ const EditAppoinments = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -369,9 +322,7 @@ const EditAppoinments = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -383,15 +334,10 @@ const EditAppoinments = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -406,9 +352,7 @@ const EditAppoinments = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -420,15 +364,10 @@ const EditAppoinments = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -440,15 +379,10 @@ const EditAppoinments = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -460,15 +394,10 @@ const EditAppoinments = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -480,15 +409,10 @@ const EditAppoinments = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -503,9 +427,7 @@ const EditAppoinments = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -520,9 +442,7 @@ const EditAppoinments = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -537,9 +457,7 @@ const EditAppoinments = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -554,9 +472,7 @@ const EditAppoinments = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -568,14 +484,10 @@ const EditAppoinments = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -588,11 +500,7 @@ const EditAppoinments = () => {
             </div>
           </div>
         </div>
-        <div
-          id="delete_patient"
-          className="modal fade delete-modal"
-          role="dialog"
-        >
+        <div id="delete_patient" className="modal fade delete-modal" role="dialog">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-body text-center">

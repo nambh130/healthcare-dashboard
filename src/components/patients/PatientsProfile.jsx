@@ -1,14 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import {
-  cameraicon,
-  doctor,
-  imagesend,
-  menuicon16,
-  profilebg,
-  profileuser01,
-} from "../imagepath";
+import { cameraicon, doctor, imagesend, menuicon16, profilebg, profileuser01 } from "../imagepath";
 import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 
@@ -34,9 +27,7 @@ const PatientsProfile = () => {
                           <FeatherIcon icon="chevron-right" />
                         </i>
                       </li>
-                      <li className="breadcrumb-item active">
-                        Patient Profile
-                      </li>
+                      <li className="breadcrumb-item active">Patient Profile</li>
                     </ul>
                   </div>
                 </div>
@@ -102,16 +93,10 @@ const PatientsProfile = () => {
                               </div>
                               <div className="col-lg-4 col-md-4 d-flex align-items-center">
                                 <div className="follow-btn-group">
-                                  <button
-                                    type="submit"
-                                    className="btn btn-info follow-btns"
-                                  >
+                                  <button type="submit" className="btn btn-info follow-btns">
                                     Follow
                                   </button>
-                                  <button
-                                    type="submit"
-                                    className="btn btn-info message-btns"
-                                  >
+                                  <button type="submit" className="btn btn-info message-btns">
                                     Message
                                   </button>
                                 </div>
@@ -130,9 +115,8 @@ const PatientsProfile = () => {
                             <div className="heading-detail ">
                               <h4 className="mb-3">About me</h4>
                               <p>
-                                Hello I am Smith Bruklin a Gynaecologist in
-                                Sanjivni Hospital Surat. I love to work with all
-                                my hospital staff and seniour doctors.
+                                Hello I am Smith Bruklin a Gynaecologist in Sanjivni Hospital Surat. I love to work with
+                                all my hospital staff and seniour doctors.
                               </p>
                             </div>
                             <div className="about-me-list">
@@ -237,10 +221,7 @@ const PatientsProfile = () => {
                             <div className="tab-content-set">
                               <ul className="nav">
                                 <li>
-                                  <Link
-                                    to="/patientsprofile"
-                                    className="active"
-                                  >
+                                  <Link to="/patients-profile" className="active">
                                     <span className="set-about-icon me-2">
                                       <img src={doctor} alt="" />
                                     </span>
@@ -287,17 +268,14 @@ const PatientsProfile = () => {
                             </div>
                             <div className="hello-park">
                               <p>
-                                Completed my graduation in Gynaecologist
-                                Medicine from the well known and renowned
-                                institution of India – SARDAR PATEL MEDICAL
-                                COLLEGE, BARODA in 2000-01, which was affiliated
-                                to M.S. University. I ranker in University exams
-                                from the same university from 1996-01.
+                                Completed my graduation in Gynaecologist Medicine from the well known and renowned
+                                institution of India – SARDAR PATEL MEDICAL COLLEGE, BARODA in 2000-01, which was
+                                affiliated to M.S. University. I ranker in University exams from the same university
+                                from 1996-01.
                               </p>
                               <p>
-                                Worked as Professor and Head of the department ;
-                                Community medicine Department at Sterline
-                                Hospital, Rajkot, Gujarat from 2003-2015
+                                Worked as Professor and Head of the department ; Community medicine Department at
+                                Sterline Hospital, Rajkot, Gujarat from 2003-2015
                               </p>
                             </div>
                           </div>
@@ -313,11 +291,7 @@ const PatientsProfile = () => {
                                   <tr>
                                     <th>
                                       <div className="form-check check-tables">
-                                        <input
-                                          className="form-check-input"
-                                          type="checkbox"
-                                          defaultValue="something"
-                                        />
+                                        <input className="form-check-input" type="checkbox" defaultValue="something" />
                                       </div>
                                     </th>
                                     <th>Date</th>
@@ -331,11 +305,7 @@ const PatientsProfile = () => {
                                   <tr>
                                     <td>
                                       <div className="form-check check-tables">
-                                        <input
-                                          className="form-check-input"
-                                          type="checkbox"
-                                          defaultValue="something"
-                                        />
+                                        <input className="form-check-input" type="checkbox" defaultValue="something" />
                                       </div>
                                     </td>
                                     <td>29/09/2022 </td>
@@ -348,26 +318,19 @@ const PatientsProfile = () => {
                                           to="#"
                                           className="action-icon dropdown-toggle"
                                           data-bs-toggle="dropdown"
-                                          aria-expanded="false"
-                                        >
+                                          aria-expanded="false">
                                           <i className="fa fa-ellipsis-v" />
                                         </Link>
                                         <div className="dropdown-menu dropdown-menu-end">
-                                          <Link
-                                            className="dropdown-item"
-                                            to="/editappoinments"
-                                          >
-                                            <i className="fa-solid fa-pen-to-square m-r-5" />{" "}
-                                            Edit
+                                          <Link className="dropdown-item" to="/edit-appoinments">
+                                            <i className="fa-solid fa-pen-to-square m-r-5" /> Edit
                                           </Link>
                                           <Link
                                             className="dropdown-item"
                                             to="#"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#delete_patient"
-                                          >
-                                            <i className="fa fa-trash-alt m-r-5"></i>{" "}
-                                            Delete
+                                            data-bs-target="#delete_patient">
+                                            <i className="fa fa-trash-alt m-r-5"></i> Delete
                                           </Link>
                                         </div>
                                       </div>
@@ -376,11 +339,7 @@ const PatientsProfile = () => {
                                   <tr>
                                     <td>
                                       <div className="form-check check-tables">
-                                        <input
-                                          className="form-check-input"
-                                          type="checkbox"
-                                          defaultValue="something"
-                                        />
+                                        <input className="form-check-input" type="checkbox" defaultValue="something" />
                                       </div>
                                     </td>
                                     <td>19/09/2022 </td>
@@ -393,26 +352,19 @@ const PatientsProfile = () => {
                                           to="#"
                                           className="action-icon dropdown-toggle"
                                           data-bs-toggle="dropdown"
-                                          aria-expanded="false"
-                                        >
+                                          aria-expanded="false">
                                           <i className="fa fa-ellipsis-v" />
                                         </Link>
                                         <div className="dropdown-menu dropdown-menu-end">
-                                          <Link
-                                            className="dropdown-item"
-                                            to="/editappoinments"
-                                          >
-                                            <i className="fa-solid fa-pen-to-square m-r-5" />{" "}
-                                            Edit
+                                          <Link className="dropdown-item" to="/edit-appoinments">
+                                            <i className="fa-solid fa-pen-to-square m-r-5" /> Edit
                                           </Link>
                                           <Link
                                             className="dropdown-item"
                                             to="#"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#delete_patient"
-                                          >
-                                            <i className="fa fa-trash-alt m-r-5"></i>{" "}
-                                            Delete
+                                            data-bs-target="#delete_patient">
+                                            <i className="fa fa-trash-alt m-r-5"></i> Delete
                                           </Link>
                                         </div>
                                       </div>
@@ -421,11 +373,7 @@ const PatientsProfile = () => {
                                   <tr>
                                     <td>
                                       <div className="form-check check-tables">
-                                        <input
-                                          className="form-check-input"
-                                          type="checkbox"
-                                          defaultValue="something"
-                                        />
+                                        <input className="form-check-input" type="checkbox" defaultValue="something" />
                                       </div>
                                     </td>
                                     <td>20/09/2022 </td>
@@ -438,26 +386,19 @@ const PatientsProfile = () => {
                                           to="#"
                                           className="action-icon dropdown-toggle"
                                           data-bs-toggle="dropdown"
-                                          aria-expanded="false"
-                                        >
+                                          aria-expanded="false">
                                           <i className="fa fa-ellipsis-v" />
                                         </Link>
                                         <div className="dropdown-menu dropdown-menu-end">
-                                          <Link
-                                            className="dropdown-item"
-                                            to="/editappoinments"
-                                          >
-                                            <i className="fa-solid fa-pen-to-square m-r-5" />{" "}
-                                            Edit
+                                          <Link className="dropdown-item" to="/edit-appoinments">
+                                            <i className="fa-solid fa-pen-to-square m-r-5" /> Edit
                                           </Link>
                                           <Link
                                             className="dropdown-item"
                                             to="#"
                                             data-bs-toggle="modal"
-                                            data-bs-target="#delete_patient"
-                                          >
-                                            <i className="fa fa-trash-alt m-r-5"></i>{" "}
-                                            Delete
+                                            data-bs-target="#delete_patient">
+                                            <i className="fa fa-trash-alt m-r-5"></i> Delete
                                           </Link>
                                         </div>
                                       </div>
@@ -488,14 +429,10 @@ const PatientsProfile = () => {
                             <span className="avatar">R</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Richard Miles{" "}
-                            </span>
+                            <span className="message-author">Richard Miles </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -510,9 +447,7 @@ const PatientsProfile = () => {
                             <span className="message-author">John Doe</span>
                             <span className="message-time">1 Aug</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -524,15 +459,10 @@ const PatientsProfile = () => {
                             <span className="avatar">T</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              {" "}
-                              Tarah Shropshire{" "}
-                            </span>
+                            <span className="message-author"> Tarah Shropshire </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -547,9 +477,7 @@ const PatientsProfile = () => {
                             <span className="message-author">Mike Litorus</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -561,15 +489,10 @@ const PatientsProfile = () => {
                             <span className="avatar">C</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              {" "}
-                              Catherine Manseau{" "}
-                            </span>
+                            <span className="message-author"> Catherine Manseau </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -581,15 +504,10 @@ const PatientsProfile = () => {
                             <span className="avatar">D</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              {" "}
-                              Domenic Houston{" "}
-                            </span>
+                            <span className="message-author"> Domenic Houston </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -601,15 +519,10 @@ const PatientsProfile = () => {
                             <span className="avatar">B</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              {" "}
-                              Buster Wigton{" "}
-                            </span>
+                            <span className="message-author"> Buster Wigton </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -621,15 +534,10 @@ const PatientsProfile = () => {
                             <span className="avatar">R</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              {" "}
-                              Rolland Webber{" "}
-                            </span>
+                            <span className="message-author"> Rolland Webber </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -641,15 +549,10 @@ const PatientsProfile = () => {
                             <span className="avatar">C</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              {" "}
-                              Claire Mapes{" "}
-                            </span>
+                            <span className="message-author"> Claire Mapes </span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -661,14 +564,10 @@ const PatientsProfile = () => {
                             <span className="avatar">M</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Melita Faucher
-                            </span>
+                            <span className="message-author">Melita Faucher</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -680,14 +579,10 @@ const PatientsProfile = () => {
                             <span className="avatar">J</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Jeffery Lalor
-                            </span>
+                            <span className="message-author">Jeffery Lalor</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -702,9 +597,7 @@ const PatientsProfile = () => {
                             <span className="message-author">Loren Gatlin</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -716,14 +609,10 @@ const PatientsProfile = () => {
                             <span className="avatar">T</span>
                           </div>
                           <div className="list-body">
-                            <span className="message-author">
-                              Tarah Shropshire
-                            </span>
+                            <span className="message-author">Tarah Shropshire</span>
                             <span className="message-time">12:28 AM</span>
                             <div className="clearfix" />
-                            <span className="message-content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                            </span>
+                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                           </div>
                         </div>
                       </Link>
@@ -736,11 +625,7 @@ const PatientsProfile = () => {
               </div>
             </div>
           </div>
-          <div
-            id="delete_patient"
-            className="modal fade delete-modal"
-            role="dialog"
-          >
+          <div id="delete_patient" className="modal fade delete-modal" role="dialog">
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
                 <div className="modal-body text-center">
@@ -748,11 +633,7 @@ const PatientsProfile = () => {
                   <h3>Are you sure want to delete this ?</h3>
                   <div className="m-t-20">
                     {" "}
-                    <Link
-                      to="#"
-                      className="btn btn-white me-2"
-                      data-bs-dismiss="modal"
-                    >
+                    <Link to="#" className="btn btn-white me-2" data-bs-dismiss="modal">
                       Close
                     </Link>
                     <button type="submit" className="btn btn-danger">

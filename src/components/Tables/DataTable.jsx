@@ -3,58 +3,58 @@ import Header from "../Header";
 import Sidebar from "../Sidebar";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Table } from "antd";
-import {onShowSizeChange,itemRender}from  '../Pagination'
-import { tabledata } from "../GlobalData/TableData";
+import { onShowSizeChange, itemRender } from "../Pagination";
+import { tabledata } from "../global-data/TableData";
 import { Link } from "react-router-dom";
+
 const DataTable = () => {
-    const [selectedRowKeys, setSelectedRowKeys] = useState([]);
+  const [selectedRowKeys, setSelectedRowKeys] = useState([]);
 
-    const onSelectChange = (newSelectedRowKeys) => {
-      console.log("selectedRowKeys changed: ", selectedRowKeys);
-      setSelectedRowKeys(newSelectedRowKeys);
-    };
-    const rowSelection = {
-        selectedRowKeys,
-        onChange: onSelectChange,
-      };
+  const onSelectChange = (newSelectedRowKeys) => {
+    console.log("selectedRowKeys changed: ", selectedRowKeys);
+    setSelectedRowKeys(newSelectedRowKeys);
+  };
+  const rowSelection = {
+    selectedRowKeys,
+    onChange: onSelectChange,
+  };
 
-
-       const columns = [
-
-        {
-            title:"Name",
-            dataIndex: "Name",
-                sorter: (a, b) => a.Name.length - b.Name.length
-        },
-        {
-            title:"Position",
-            dataIndex: "Position",
-                sorter: (a, b) => a.Position.length - b.Position.length
-        },
-        {
-            title:"Office",
-            dataIndex: "Office",
-                sorter: (a, b) => a.Office.length - b.Office.length
-        },
-        {
-            title:"Age",
-            dataIndex: "Age",
-                sorter: (a, b) => a.Age.length - b.Age.length,
-        }, {
-            title:"Startdate",
-            dataIndex: "Startdate",
-                sorter: (a, b) => a.Startdate.length - b.Startdate.length
-        }, {
-            title:"Salary",
-            dataIndex: "Salary",
-                sorter: (a, b) => a. Salary.length - b. Salary.length
-        },
-
-    ]
+  const columns = [
+    {
+      title: "Name",
+      dataIndex: "Name",
+      sorter: (a, b) => a.Name.length - b.Name.length,
+    },
+    {
+      title: "Position",
+      dataIndex: "Position",
+      sorter: (a, b) => a.Position.length - b.Position.length,
+    },
+    {
+      title: "Office",
+      dataIndex: "Office",
+      sorter: (a, b) => a.Office.length - b.Office.length,
+    },
+    {
+      title: "Age",
+      dataIndex: "Age",
+      sorter: (a, b) => a.Age.length - b.Age.length,
+    },
+    {
+      title: "Startdate",
+      dataIndex: "Startdate",
+      sorter: (a, b) => a.Startdate.length - b.Startdate.length,
+    },
+    {
+      title: "Salary",
+      dataIndex: "Salary",
+      sorter: (a, b) => a.Salary.length - b.Salary.length,
+    },
+  ];
   return (
     <>
       <Header />
-      <Sidebar id='menu-item16' id1='menu-items16' activeClassName='data-table'/>
+      <Sidebar id="menu-item16" id1="menu-items16" activeClassName="data-table" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -68,8 +68,8 @@ const DataTable = () => {
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
-                        <FeatherIcon icon="chevron-right"/>
-                        </i>
+                        <FeatherIcon icon="chevron-right" />
+                      </i>
                     </li>
                     <li className="breadcrumb-item active">Data Tables</li>
                   </ul>
@@ -83,23 +83,20 @@ const DataTable = () => {
                   <div className="card-block">
                     <h6 className="card-title text-bold">Default Datatable</h6>
                     <p className="content-group">
-                      This is the most basic example of the datatables with zero
-                      configuration. Use the <code>.datatable</code> class to
-                      initialize datatables.
+                      This is the most basic example of the datatables with zero configuration. Use the{" "}
+                      <code>.datatable</code> class to initialize datatables.
                     </p>
                     <div className="table-responsive">
-                    <Table
+                      <Table
                         pagination={{
                           total: tabledata.length,
-                          showTotal: (total, range) =>
-                          `Showing ${range[0]} to ${range[1]} of ${total} entries`,
+                          showTotal: (total, range) => `Showing ${range[0]} to ${range[1]} of ${total} entries`,
                           // showSizeChanger: true,
-                           onShowSizeChange: onShowSizeChange,
-                           itemRender: itemRender,
+                          onShowSizeChange: onShowSizeChange,
+                          itemRender: itemRender,
                         }}
                         columns={columns}
                         dataSource={tabledata}
-
                         rowSelection={rowSelection}
                         rowKey={(record) => record.id}
                       />
@@ -126,9 +123,7 @@ const DataTable = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -143,9 +138,7 @@ const DataTable = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -157,15 +150,10 @@ const DataTable = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -180,9 +168,7 @@ const DataTable = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -194,15 +180,10 @@ const DataTable = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -214,15 +195,10 @@ const DataTable = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -234,15 +210,10 @@ const DataTable = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -254,15 +225,10 @@ const DataTable = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -277,9 +243,7 @@ const DataTable = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -294,9 +258,7 @@ const DataTable = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -311,9 +273,7 @@ const DataTable = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -328,9 +288,7 @@ const DataTable = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -342,14 +300,10 @@ const DataTable = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>

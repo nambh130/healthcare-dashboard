@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import Header from "../../Header";
 import Sidebar from "../../Sidebar";
 import { imguser } from "../../imagepath";
-import { DatePicker} from "antd";
+import { DatePicker } from "antd";
 import Select from "react-select";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { Link } from "react-router-dom";
 
 const EditProfile = () => {
-    const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
   const [gender, setGender] = useState([
     { value: 1, label: "Select Gender" },
     { value: 2, label: "Male" },
@@ -32,12 +32,12 @@ const EditProfile = () => {
                 <div className="col-sm-12">
                   <ul className="breadcrumb">
                     <li className="breadcrumb-item">
-                     <Link to="#">Dashboard </Link>
+                      <Link to="#">Dashboard </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
-                        <FeatherIcon icon="chevron-right"/>
-                        </i>
+                        <FeatherIcon icon="chevron-right" />
+                      </i>
                     </li>
                     <li className="breadcrumb-item active">Edit Profile</li>
                   </ul>
@@ -62,43 +62,31 @@ const EditProfile = () => {
                         <div className="col-md-6">
                           <div className="form-group local-forms">
                             <label className="focus-label">First Name</label>
-                            <input
-                              type="text"
-                              className="form-control floating"
-                              defaultValue="John"
-                            />
+                            <input type="text" className="form-control floating" defaultValue="John" />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-group local-forms">
                             <label className="focus-label">Last Name</label>
-                            <input
-                              type="text"
-                              className="form-control floating"
-                              defaultValue="Doe"
-                            />
+                            <input type="text" className="form-control floating" defaultValue="Doe" />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-group local-forms ">
                             <label className="focus-label">Birth Date</label>
                             <div className="cal-icon">
-                            <DatePicker
-                              className="form-control datetimepicker"
-                              onChange={onChange}
-                              suffixIcon={null}
-                            />
+                              <DatePicker
+                                className="form-control datetimepicker"
+                                onChange={onChange}
+                                suffixIcon={null}
+                              />
                             </div>
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-group local-forms">
                             <label className="focus-label">Gendar</label>
-                            <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={gender}
-                            />
+                            <Select defaultValue={selectedOption} onChange={setSelectedOption} options={gender} />
                           </div>
                         </div>
                       </div>
@@ -112,51 +100,31 @@ const EditProfile = () => {
                   <div className="col-md-12">
                     <div className="form-group local-forms">
                       <label className="focus-label">Address</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="4487 Snowbird Lane"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="4487 Snowbird Lane" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">State</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="New York"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="New York" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Country</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="United States"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="United States" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Pin Code</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue={10523}
-                      />
+                      <input type="text" className="form-control floating" defaultValue={10523} />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Phone Number</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="631-889-3206"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="631-889-3206" />
                     </div>
                   </div>
                 </div>
@@ -167,32 +135,20 @@ const EditProfile = () => {
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Institution</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="Oxford University"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="Oxford University" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Subject</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="Computer Science"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="Computer Science" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Starting Date</label>
                       <div className="cal-icon">
-                        <DatePicker
-                          className="form-control datetimepicker"
-                          onChange={onChange}
-                          suffixIcon={null}
-                        />
+                        <DatePicker className="form-control datetimepicker" onChange={onChange} suffixIcon={null} />
                       </div>
                     </div>
                   </div>
@@ -200,37 +156,25 @@ const EditProfile = () => {
                     <div className="form-group local-forms">
                       <label className="focus-label">Complete Date</label>
                       <div className="cal-icon">
-                        <DatePicker
-                          className="form-control datetimepicker"
-                          onChange={onChange}
-                          suffixIcon={null}
-                        />
+                        <DatePicker className="form-control datetimepicker" onChange={onChange} suffixIcon={null} />
                       </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Degree</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="BE Computer Science"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="BE Computer Science" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Grade</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="Grade A"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="Grade A" />
                     </div>
                   </div>
                 </div>
                 <div className="add-more">
-                 <Link to="#" className="btn btn-primary">
+                  <Link to="#" className="btn btn-primary">
                     <i className="fa fa-plus" /> Add More Institute
                   </Link>
                 </div>
@@ -241,42 +185,26 @@ const EditProfile = () => {
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Company Name</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="Digital Devlopment Inc"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="Digital Devlopment Inc" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Location</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="United States"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="United States" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Job Position</label>
-                      <input
-                        type="text"
-                        className="form-control floating"
-                        defaultValue="Web Developer"
-                      />
+                      <input type="text" className="form-control floating" defaultValue="Web Developer" />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group local-forms">
                       <label className="focus-label">Period From</label>
                       <div className="cal-icon">
-                        <DatePicker
-                          className="form-control datetimepicker"
-                          onChange={onChange}
-                          suffixIcon={null}
-                        />
+                        <DatePicker className="form-control datetimepicker" onChange={onChange} suffixIcon={null} />
                       </div>
                     </div>
                   </div>
@@ -284,17 +212,13 @@ const EditProfile = () => {
                     <div className="form-group local-forms">
                       <label className="focus-label">Period To</label>
                       <div className="cal-icon">
-                        <DatePicker
-                          className="form-control datetimepicker"
-                          onChange={onChange}
-                          suffixIcon={null}
-                        />
+                        <DatePicker className="form-control datetimepicker" onChange={onChange} suffixIcon={null} />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="add-more">
-                 <Link to="#" className="btn btn-primary">
+                  <Link to="#" className="btn btn-primary">
                     <i className="fa fa-plus" /> Add More Experience
                   </Link>
                 </div>
@@ -314,7 +238,7 @@ const EditProfile = () => {
               <div className="drop-scroll msg-list-scroll" id="msg_list">
                 <ul className="list-box">
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
@@ -323,15 +247,13 @@ const EditProfile = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item new-message">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -340,35 +262,28 @@ const EditProfile = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -377,95 +292,73 @@ const EditProfile = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
@@ -474,15 +367,13 @@ const EditProfile = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -491,15 +382,13 @@ const EditProfile = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -508,15 +397,13 @@ const EditProfile = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">L</span>
@@ -525,28 +412,22 @@ const EditProfile = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -554,7 +435,7 @@ const EditProfile = () => {
                 </ul>
               </div>
               <div className="topnav-dropdown-footer">
-               <Link to="#">See all messages</Link>
+                <Link to="#">See all messages</Link>
               </div>
             </div>
           </div>

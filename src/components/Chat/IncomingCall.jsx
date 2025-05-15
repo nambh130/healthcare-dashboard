@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar";
 import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import {
-    Avatar1,
+  Avatar1,
   Avatar2,
   Avatar3,
   Avatar4,
@@ -25,7 +25,6 @@ import {
   voiceicon1,
   voiceicon2,
   voiceicon3,
-
 } from "../imagepath";
 import { Button, Modal } from "react-bootstrap";
 
@@ -50,11 +49,7 @@ const IncomingCall = () => {
       <div className="modal-open">
         <div className="main-wrapper">
           <Header />
-          <Sidebar
-            id="menu-item9"
-            id1="menu-items9"
-            activeClassName="incoming-call"
-          />
+          <Sidebar id="menu-item9" id1="menu-items9" activeClassName="incoming-call" />
           <>
             <div className="page-wrapper">
               <div className="content">
@@ -283,27 +278,43 @@ const IncomingCall = () => {
                         </div>
                       </div>
                       <div className="card chat-box  mb-0">
-                                    <div className="voice-call-blk text-center">
-                                        <div className="voice-call-user">
-                                            <img src={Avatar3} alt="img" />
-                                            <h3>Bernardo James</h3>
-                                            <p>Doctor</p>
-                                        </div>
-                                        <div className="voice-time">
-                                            <h3><img src={clock} className="me-2" alt="img" /> 00:10:10</h3>
-                                        </div>
-                                        <div className="voice-menu">
-                                            <ul>
-                                                <li><Link to="#"><img src={voiceicon1} alt="img" /></Link></li>
-                                                <li className="active"><Link to="#"><img src={voiceicon2} alt="img" /></Link></li>
-                                                <li><Link to="#"><img src={voiceicon3} alt="img" /></Link></li>
-                                            </ul>
-                                        </div>
-                                        <div className="end-call-voice">
-                                            <Link to="#" className="btn btn-primary">End Call</Link>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="voice-call-blk text-center">
+                          <div className="voice-call-user">
+                            <img src={Avatar3} alt="img" />
+                            <h3>Bernardo James</h3>
+                            <p>Doctor</p>
+                          </div>
+                          <div className="voice-time">
+                            <h3>
+                              <img src={clock} className="me-2" alt="img" /> 00:10:10
+                            </h3>
+                          </div>
+                          <div className="voice-menu">
+                            <ul>
+                              <li>
+                                <Link to="#">
+                                  <img src={voiceicon1} alt="img" />
+                                </Link>
+                              </li>
+                              <li className="active">
+                                <Link to="#">
+                                  <img src={voiceicon2} alt="img" />
+                                </Link>
+                              </li>
+                              <li>
+                                <Link to="#">
+                                  <img src={voiceicon3} alt="img" />
+                                </Link>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="end-call-voice">
+                            <Link to="#" className="btn btn-primary">
+                              End Call
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     {/* Chat */}
 
@@ -317,9 +328,7 @@ const IncomingCall = () => {
               <Modal.Header closeButton>
                 <Modal.Title>Modal heading</Modal.Title>
               </Modal.Header>
-              <Modal.Body>
-                Woohoo, you are reading this text in a modal!
-              </Modal.Body>
+              <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                   Close
@@ -330,41 +339,46 @@ const IncomingCall = () => {
               </Modal.Footer>
             </Modal>
             <div id="incoming_call" className="modal custom-modal" role="dialog">
-                  {showModal &&
-                     <div className="modal">
-                        <div className="modal-content">
-                            <div className="modal-dialog modal-dialog-centered">
-                                <div className="modal-content">
-                                    <div className="modal-body">
-                                        <div className="crypto-income-blk text-center">
-                                            <div className="voice-call-user">
-                                                <img src={Avatar1} alt="img" />
-                                                <h3>Bernardo James</h3>
-                                                <p>Senior Developer</p>
-                                            </div>
-                                            <div className="calling-income">
-                                                <h4>Calling...</h4>
-                                            </div>
-                                            <div className="voice-menu-income comman-flex">
-                                                <Link to="#" className="btn btn-primary call-remove comman-flex me-2" data-bs-dismiss="modal"><img src="assets/img/icons/call-remove.svg" alt="img" /></Link>
-                                                <Link to="#" className="btn btn-primary call-received comman-flex"><img src="assets/img/icons/call-received.svg" alt="img" /></Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+              {showModal && (
+                <div className="modal">
+                  <div className="modal-content">
+                    <div className="modal-dialog modal-dialog-centered">
+                      <div className="modal-content">
+                        <div className="modal-body">
+                          <div className="crypto-income-blk text-center">
+                            <div className="voice-call-user">
+                              <img src={Avatar1} alt="img" />
+                              <h3>Bernardo James</h3>
+                              <p>Senior Developer</p>
                             </div>
+                            <div className="calling-income">
+                              <h4>Calling...</h4>
+                            </div>
+                            <div className="voice-menu-income comman-flex">
+                              <Link
+                                to="#"
+                                className="btn btn-primary call-remove comman-flex me-2"
+                                data-bs-dismiss="modal">
+                                <img src="assets/img/icons/call-remove.svg" alt="img" />
+                              </Link>
+                              <Link to="#" className="btn btn-primary call-received comman-flex">
+                                <img src="assets/img/icons/call-received.svg" alt="img" />
+                              </Link>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-
-                    }
-                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
             {showModal && (
               <div
                 id="incoming_call"
                 className="modal custom-modal fade show"
                 role="dialog"
-                style={{ display: "block" }}
-              >
+                style={{ display: "block" }}>
                 <div className="modal-dialog modal-dialog-centered">
                   <div className="modal-content">
                     <div className="modal-body">
@@ -382,14 +396,10 @@ const IncomingCall = () => {
                             to="#"
                             className="btn btn-primary call-remove comman-flex me-2"
                             data-bs-dismiss="modal"
-                            onClick={handleCloseModal}
-                          >
+                            onClick={handleCloseModal}>
                             <img src={removecall} alt="img" />
                           </Link>
-                          <Link
-                            to="#"
-                            className="btn btn-primary call-received comman-flex"
-                          >
+                          <Link to="#" className="btn btn-primary call-received comman-flex">
                             <img src={receivedcall} alt="img" />
                           </Link>
                         </div>
@@ -401,7 +411,6 @@ const IncomingCall = () => {
             )}
           </>
         </div>
-
       </div>
     </>
   );

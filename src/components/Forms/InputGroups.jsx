@@ -2,12 +2,13 @@ import React from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+
 const InputGroups = () => {
   return (
     <>
       <Header />
-      <Sidebar id='menu-item15' id1='menu-items15' activeClassName='input-groups'/>
+      <Sidebar id="menu-item15" id1="menu-items15" activeClassName="input-groups" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -21,8 +22,8 @@ const InputGroups = () => {
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
-                        <FeatherIcon icon="chevron-right"/>
-                        </i>
+                        <FeatherIcon icon="chevron-right" />
+                      </i>
                     </li>
                     <li className="breadcrumb-item active">Input Groups</li>
                   </ul>
@@ -36,16 +37,11 @@ const InputGroups = () => {
                   <h4 className="card-title">Basic Examples</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Group Left
-                      </label>
+                      <label className="col-form-label col-lg-2">Group Left</label>
                       <div className="col-md-10">
                         <div className="input-group mb-3">
                           <div className="input-group-prepend">
-                            <span
-                              className="input-group-text"
-                              id="basic-addon1"
-                            >
+                            <span className="input-group-text" id="basic-addon1">
                               @
                             </span>
                           </div>
@@ -60,9 +56,7 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Group Right
-                      </label>
+                      <label className="col-form-label col-lg-2">Group Right</label>
                       <div className="col-md-10">
                         <div className="input-group mb-3">
                           <input
@@ -79,9 +73,7 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        URL Example
-                      </label>
+                      <label className="col-form-label col-lg-2">URL Example</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -92,9 +84,7 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Group with Price
-                      </label>
+                      <label className="col-form-label col-lg-2">Group with Price</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -106,9 +96,7 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Group with Price (Left)
-                      </label>
+                      <label className="col-form-label col-lg-2">Group with Price (Left)</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -127,16 +115,11 @@ const InputGroups = () => {
                   <h4 className="card-title">Sizing</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Input Group Large
-                      </label>
+                      <label className="col-form-label col-lg-2">Input Group Large</label>
                       <div className="col-md-10">
                         <div className="input-group input-group-lg">
                           <div className="input-group-prepend">
-                            <span
-                              className="input-group-text"
-                              id="sizing-addon1"
-                            >
+                            <span className="input-group-text" id="sizing-addon1">
                               @
                             </span>
                           </div>
@@ -150,16 +133,11 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Input Group Default
-                      </label>
+                      <label className="col-form-label col-lg-2">Input Group Default</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
-                            <span
-                              className="input-group-text"
-                              id="sizing-addon2"
-                            >
+                            <span className="input-group-text" id="sizing-addon2">
                               @
                             </span>
                           </div>
@@ -173,16 +151,11 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Input Group Small
-                      </label>
+                      <label className="col-form-label col-lg-2">Input Group Small</label>
                       <div className="col-md-10">
                         <div className="input-group input-group-sm">
                           <div className="input-group-prepend">
-                            <span
-                              className="input-group-text"
-                              id="sizing-addon3"
-                            >
+                            <span className="input-group-text" id="sizing-addon3">
                               @
                             </span>
                           </div>
@@ -201,9 +174,7 @@ const InputGroups = () => {
                   <h4 className="card-title">Checkbox and Radio Addons</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Checkbox
-                      </label>
+                      <label className="col-form-label col-lg-2">Checkbox</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -234,9 +205,7 @@ const InputGroups = () => {
                   <h4 className="card-title">Multiple addons</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Radio and Text addons
-                      </label>
+                      <label className="col-form-label col-lg-2">Radio and Text addons</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -252,9 +221,7 @@ const InputGroups = () => {
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Two addons
-                      </label>
+                      <label className="col-form-label col-lg-2">Two addons</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
@@ -273,17 +240,11 @@ const InputGroups = () => {
                   <h4 className="card-title">Buttons with dropdowns</h4>
                   <form action="#">
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Radio and Text addons
-                      </label>
+                      <label className="col-form-label col-lg-2">Radio and Text addons</label>
                       <div className="col-md-10">
                         <div className="input-group">
                           <div className="input-group-prepend">
-                            <button
-                              type="button"
-                              className="btn btn-white dropdown-toggle"
-                              data-bs-toggle="dropdown"
-                            >
+                            <button type="button" className="btn btn-white dropdown-toggle" data-bs-toggle="dropdown">
                               Action
                             </button>
                             <div className="dropdown-menu">
@@ -296,39 +257,22 @@ const InputGroups = () => {
                               <Link className="dropdown-item" to="#">
                                 Something else here
                               </Link>
-                              <div
-                                role="separator"
-                                className="dropdown-divider"
-                              />
+                              <div role="separator" className="dropdown-divider" />
                               <Link className="dropdown-item" to="#">
                                 Separated link
                               </Link>
                             </div>
                           </div>
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Left dropdown"
-                          />
+                          <input type="text" className="form-control" placeholder="Left dropdown" />
                         </div>
                       </div>
                     </div>
                     <div className="form-group row">
-                      <label className="col-form-label col-lg-2">
-                        Two addons
-                      </label>
+                      <label className="col-form-label col-lg-2">Two addons</label>
                       <div className="col-md-10">
                         <div className="input-group">
-                          <input
-                            type="text"
-                            className="form-control"
-                            placeholder="Right dropdown"
-                          />
-                          <button
-                            type="button"
-                            className="btn btn-white dropdown-toggle"
-                            data-bs-toggle="dropdown"
-                          >
+                          <input type="text" className="form-control" placeholder="Right dropdown" />
+                          <button type="button" className="btn btn-white dropdown-toggle" data-bs-toggle="dropdown">
                             Action
                           </button>
                           <div className="dropdown-menu dropdown-menu-end">
@@ -341,10 +285,7 @@ const InputGroups = () => {
                             <Link className="dropdown-item" to="#">
                               Something else here
                             </Link>
-                            <div
-                              role="separator"
-                              className="dropdown-divider"
-                            />
+                            <div role="separator" className="dropdown-divider" />
                             <Link className="dropdown-item" to="#">
                               Separated link
                             </Link>
@@ -374,9 +315,7 @@ const InputGroups = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -391,9 +330,7 @@ const InputGroups = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -405,15 +342,10 @@ const InputGroups = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -428,9 +360,7 @@ const InputGroups = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -442,15 +372,10 @@ const InputGroups = () => {
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -462,15 +387,10 @@ const InputGroups = () => {
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -482,15 +402,10 @@ const InputGroups = () => {
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -502,15 +417,10 @@ const InputGroups = () => {
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -525,9 +435,7 @@ const InputGroups = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -542,9 +450,7 @@ const InputGroups = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -559,9 +465,7 @@ const InputGroups = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -576,9 +480,7 @@ const InputGroups = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -590,14 +492,10 @@ const InputGroups = () => {
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>

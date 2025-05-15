@@ -3,10 +3,11 @@
 import React, { useState } from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import { DatePicker} from "antd";
+import { DatePicker } from "antd";
 import Select from "react-select";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
+
 const AddDoctor = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -54,7 +55,7 @@ const AddDoctor = () => {
                 <div className="col-sm-12">
                   <ul className="breadcrumb">
                     <li className="breadcrumb-item">
-                     <Link to="#">Doctors </Link>
+                      <Link to="#">Doctors </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
@@ -83,11 +84,7 @@ const AddDoctor = () => {
                             <label>
                               First Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -95,11 +92,7 @@ const AddDoctor = () => {
                             <label>
                               Last Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -107,11 +100,7 @@ const AddDoctor = () => {
                             <label>
                               User Name <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -119,11 +108,7 @@ const AddDoctor = () => {
                             <label>
                               Mobile <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -131,11 +116,7 @@ const AddDoctor = () => {
                             <label>
                               Email <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="email"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="email" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -143,38 +124,28 @@ const AddDoctor = () => {
                             <label>
                               Password <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="password"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="password" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
                           <div className="form-group local-forms">
                             <label>
-                              Confirm Password{" "}
-                              <span className="login-danger">*</span>
+                              Confirm Password <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="password"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="password" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
                           <div className="form-group local-forms cal-icon">
                             <label>
-                              Date Of Birth{" "}
-                              <span className="login-danger">*</span>
+                              Date Of Birth <span className="login-danger">*</span>
                             </label>
                             <DatePicker
                               className="form-control datetimepicker"
                               onChange={onChange}
                               suffixIcon={null}
                               style={{
-                                borderColor: isClicked ? '#2E37A4' : '2px solid rgba(46, 55, 164, 0.1)',
+                                borderColor: isClicked ? "#2E37A4" : "2px solid rgba(46, 55, 164, 0.1)",
                               }}
                             />
                           </div>
@@ -186,21 +157,13 @@ const AddDoctor = () => {
                             </label>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" />
                                 Male
                               </label>
                             </div>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" />
                                 Female
                               </label>
                             </div>
@@ -211,24 +174,15 @@ const AddDoctor = () => {
                             <label>
                               Education <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
                           <div className="form-group local-forms">
                             <label>
-                              Designation{" "}
-                              <span className="login-danger">*</span>
+                              Designation <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-4">
@@ -242,30 +196,29 @@ const AddDoctor = () => {
                               options={department}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
                               styles={{
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1);",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
-
                           </div>
                         </div>
                         <div className="col-12 col-sm-12">
@@ -273,12 +226,7 @@ const AddDoctor = () => {
                             <label>
                               Address <span className="login-danger">*</span>
                             </label>
-                            <textarea
-                              className="form-control"
-                              rows={3}
-                              cols={30}
-                              defaultValue={""}
-                            />
+                            <textarea className="form-control" rows={3} cols={30} defaultValue={""} />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-3">
@@ -287,35 +235,33 @@ const AddDoctor = () => {
                               City <span className="login-danger">*</span>
                             </label>
                             <Select
-                              menuPosition={'fixed'}
                               defaultValue={selectedOption}
                               onChange={setSelectedOption}
-                              options={options}
+                              calendar
                               menuPortalTarget={document.body}
-                              styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
-
                               styles={{
+                                menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
@@ -327,108 +273,90 @@ const AddDoctor = () => {
                               Country <span className="login-danger">*</span>
                             </label>
                             <Select
-                              menuPosition={'fixed'}
                               defaultValue={selectedOption}
                               onChange={setSelectedOption}
-                              options={option}
+                              calendar
                               menuPortalTarget={document.body}
-                              styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
-
                               styles={{
+                                menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
-
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-3">
                           <div className="form-group local-forms">
                             <label>
-                              State/Province{" "}
-                              <span className="login-danger">*</span>
+                              State/Province <span className="login-danger">*</span>
                             </label>
                             <Select
-                              menuPosition={'fixed'}
                               defaultValue={selectedOption}
                               onChange={setSelectedOption}
-                              options={options}
+                              calendar
                               menuPortalTarget={document.body}
-                              styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                               id="search-commodity"
                               components={{
-                                IndicatorSeparator: () => null
+                                IndicatorSeparator: () => null,
                               }}
-
                               styles={{
+                                menuPortal: (base) => ({ ...base, zIndex: 9999 }),
                                 control: (baseStyles, state) => ({
                                   ...baseStyles,
-                                  borderColor: state.isFocused ?'none' : '2px solid rgba(46, 55, 164, 0.1);',
-                                   boxShadow: state.isFocused ? '0 0 0 1px #2e37a4' : 'none',
-                                  '&:hover': {
-                                    borderColor: state.isFocused ? 'none' : '2px solid rgba(46, 55, 164, 0.1)',
+                                  borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
+                                  boxShadow: state.isFocused ? "0 0 0 1px #2e37a4" : "none",
+                                  "&:hover": {
+                                    borderColor: state.isFocused ? "none" : "2px solid rgba(46, 55, 164, 0.1)",
                                   },
-                                  borderRadius: '10px',
+                                  borderRadius: "10px",
                                   fontSize: "14px",
-                                    minHeight: "45px",
+                                  minHeight: "45px",
                                 }),
                                 dropdownIndicator: (base, state) => ({
                                   ...base,
-                                  transform: state.selectProps.menuIsOpen ? 'rotate(-180deg)' : 'rotate(0)',
-                                  transition: '250ms',
-                                  width: '35px',
-                                  height: '35px',
+                                  transform: state.selectProps.menuIsOpen ? "rotate(-180deg)" : "rotate(0)",
+                                  transition: "250ms",
+                                  width: "35px",
+                                  height: "35px",
                                 }),
                               }}
                             />
-
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-3">
                           <div className="form-group local-forms">
                             <label>
-                              Postal Code{" "}
-                              <span className="login-danger">*</span>
+                              Postal Code <span className="login-danger">*</span>
                             </label>
-                            <input
-                              className="form-control"
-                              type="text"
-                              placeholder=""
-                            />
+                            <input className="form-control" type="text" placeholder="" />
                           </div>
                         </div>
                         <div className="col-12 col-sm-12">
                           <div className="form-group local-forms">
                             <label>
-                              Start Biography{" "}
-                              <span className="login-danger">*</span>
+                              Start Biography <span className="login-danger">*</span>
                             </label>
-                            <textarea
-                              className="form-control"
-                              rows={3}
-                              cols={30}
-                              defaultValue={""}
-                            />
+                            <textarea className="form-control" rows={3} cols={30} defaultValue={""} />
                           </div>
                         </div>
                         <div className="col-12 col-md-6 col-xl-6">
@@ -445,7 +373,7 @@ const AddDoctor = () => {
                                 onChange={loadFile}
                                 className="hide-input"
                               />
-                                <label htmlFor="file" className="upload">
+                              <label htmlFor="file" className="upload">
                                 Choose File
                               </label>
                             </div>
@@ -471,21 +399,13 @@ const AddDoctor = () => {
                             </label>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" />
                                 Active
                               </label>
                             </div>
                             <div className="form-check-inline">
                               <label className="form-check-label">
-                                <input
-                                  type="radio"
-                                  name="gender"
-                                  className="form-check-input"
-                                />
+                                <input type="radio" name="gender" className="form-check-input" />
                                 In Active
                               </label>
                             </div>
@@ -493,16 +413,10 @@ const AddDoctor = () => {
                         </div>
                         <div className="col-12">
                           <div className="doctor-submit text-end">
-                            <button
-                              type="submit"
-                              className="btn btn-primary submit-form me-2"
-                            >
+                            <button type="submit" className="btn btn-primary submit-form me-2">
                               Submit
                             </button>
-                            <button
-                              type="submit"
-                              className="btn btn-primary cancel-form"
-                            >
+                            <button type="submit" className="btn btn-primary cancel-form">
                               Cancel
                             </button>
                           </div>
@@ -522,7 +436,7 @@ const AddDoctor = () => {
               <div className="drop-scroll msg-list-scroll" id="msg_list">
                 <ul className="list-box">
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
@@ -531,15 +445,13 @@ const AddDoctor = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item new-message">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -548,35 +460,28 @@ const AddDoctor = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -585,95 +490,73 @@ const AddDoctor = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
@@ -682,15 +565,13 @@ const AddDoctor = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -699,15 +580,13 @@ const AddDoctor = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -716,15 +595,13 @@ const AddDoctor = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">L</span>
@@ -733,28 +610,22 @@ const AddDoctor = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                   <Link to="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -762,12 +633,11 @@ const AddDoctor = () => {
                 </ul>
               </div>
               <div className="topnav-dropdown-footer">
-               <Link to="#">See all messages</Link>
+                <Link to="#">See all messages</Link>
               </div>
             </div>
           </div>
         </div>
-
       </>
     </div>
   );

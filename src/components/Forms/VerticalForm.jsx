@@ -4,7 +4,7 @@ import Header from "../Header";
 import Sidebar from "../Sidebar";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import Select from "react-select";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const VerticalForm = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -28,7 +28,7 @@ const VerticalForm = () => {
   return (
     <>
       <Header />
-      <Sidebar id='menu-item15' id1='menu-items15' activeClassName='vertical-form'/>
+      <Sidebar id="menu-item15" id1="menu-items15" activeClassName="vertical-form" />
       <>
         <div className="page-wrapper">
           <div className="content">
@@ -38,7 +38,7 @@ const VerticalForm = () => {
                 <div className="col-sm-12">
                   <ul className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link to ="#">Dashboard </Link>
+                      <Link to="#">Dashboard </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <i className="feather-chevron-right">
@@ -143,11 +143,7 @@ const VerticalForm = () => {
                         </div>
                         <div className="form-group">
                           <label>Blood Group</label>
-                          <Select
-                            defaultValue={selectedOption}
-                            onChange={setSelectedOption}
-                            options={bloodGroup}
-                          />
+                          <Select defaultValue={selectedOption} onChange={setSelectedOption} options={bloodGroup} />
                         </div>
                         <div className="form-group">
                           <label className="display-block">Gender:</label>
@@ -159,10 +155,7 @@ const VerticalForm = () => {
                               id="gender_male"
                               defaultValue="option1"
                             />
-                            <label
-                              className="form-check-label"
-                              htmlFor="gender_male"
-                            >
+                            <label className="form-check-label" htmlFor="gender_male">
                               Male
                             </label>
                           </div>
@@ -174,10 +167,7 @@ const VerticalForm = () => {
                               id="gender_female"
                               defaultValue="option2"
                             />
-                            <label
-                              className="form-check-label"
-                              htmlFor="gender_female"
-                            >
+                            <label className="form-check-label" htmlFor="gender_female">
                               Female
                             </label>
                           </div>
@@ -259,11 +249,7 @@ const VerticalForm = () => {
                         </div>
                         <div className="form-group">
                           <label>State:</label>
-                          <Select
-                            defaultValue={selectedOption}
-                            onChange={setSelectedOption}
-                            options={state}
-                          />
+                          <Select defaultValue={selectedOption} onChange={setSelectedOption} options={state} />
                         </div>
                         <div className="form-group">
                           <label>Your message:</label>
@@ -318,11 +304,7 @@ const VerticalForm = () => {
                           <div className="col-md-6">
                             <div className="form-group">
                               <label>Country:</label>
-                              <Select
-                              defaultValue={selectedOption}
-                              onChange={setSelectedOption}
-                              options={country}
-                            />
+                              <Select defaultValue={selectedOption} onChange={setSelectedOption} options={country} />
                             </div>
                           </div>
                           <div className="col-md-6">
@@ -366,7 +348,7 @@ const VerticalForm = () => {
               <div className="drop-scroll msg-list-scroll" id="msg_list">
                 <ul className="list-box">
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
@@ -375,15 +357,13 @@ const VerticalForm = () => {
                           <span className="message-author">Richard Miles </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item new-message">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -392,35 +372,28 @@ const VerticalForm = () => {
                           <span className="message-author">John Doe</span>
                           <span className="message-time">1 Aug</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Tarah Shropshire{" "}
-                          </span>
+                          <span className="message-author"> Tarah Shropshire </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -429,95 +402,73 @@ const VerticalForm = () => {
                           <span className="message-author">Mike Litorus</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Catherine Manseau{" "}
-                          </span>
+                          <span className="message-author"> Catherine Manseau </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">D</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Domenic Houston{" "}
-                          </span>
+                          <span className="message-author"> Domenic Houston </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">B</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Buster Wigton{" "}
-                          </span>
+                          <span className="message-author"> Buster Wigton </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">R</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            {" "}
-                            Rolland Webber{" "}
-                          </span>
+                          <span className="message-author"> Rolland Webber </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">C</span>
@@ -526,15 +477,13 @@ const VerticalForm = () => {
                           <span className="message-author"> Claire Mapes </span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">M</span>
@@ -543,15 +492,13 @@ const VerticalForm = () => {
                           <span className="message-author">Melita Faucher</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">J</span>
@@ -560,15 +507,13 @@ const VerticalForm = () => {
                           <span className="message-author">Jeffery Lalor</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">L</span>
@@ -577,28 +522,22 @@ const VerticalForm = () => {
                           <span className="message-author">Loren Gatlin</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
                   </li>
                   <li>
-                    <Link to ="#">
+                    <Link to="#">
                       <div className="list-item">
                         <div className="list-left">
                           <span className="avatar">T</span>
                         </div>
                         <div className="list-body">
-                          <span className="message-author">
-                            Tarah Shropshire
-                          </span>
+                          <span className="message-author">Tarah Shropshire</span>
                           <span className="message-time">12:28 AM</span>
                           <div className="clearfix" />
-                          <span className="message-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                          </span>
+                          <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
                         </div>
                       </div>
                     </Link>
@@ -606,7 +545,7 @@ const VerticalForm = () => {
                 </ul>
               </div>
               <div className="topnav-dropdown-footer">
-                <Link to ="#">See all messages</Link>
+                <Link to="#">See all messages</Link>
               </div>
             </div>
           </div>
